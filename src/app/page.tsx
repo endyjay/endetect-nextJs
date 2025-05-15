@@ -8,7 +8,6 @@ import CloudPanelScreenshots from "@/components/landing/CloudPanelScreenshots";
 import QueryCTA from "@/components/landing/QueryCTA";
 import IntegrationsSection from "@/components/landing/IntegrationsSection";
 import AboutStatsSection from "@/components/landing/AboutStatsSection";
-import HostingProviders from "@/components/landing/HostingProviders";
 import ImpactSection from "@/components/landing/ImpactSection";
 
 // TODO: Extract and convert the JSON-LD schema from the original index.html
@@ -68,7 +67,7 @@ export default function HomePage() {
       <QueryCTA />
       <IntegrationsSection />
       <AboutStatsSection />
-      <HostingProviders />
+     
       <ImpactSection />
       {/* Add other sections here */}
     </main>

@@ -1,5 +1,22 @@
 import Image from "next/image";
-
+const providers = [
+  {
+    src: "https://endetect.com/wp-content/uploads/2021/08/aws.svg",
+    alt: "AWS logo",
+    name: "AWS",
+  },
+  {
+    src: "https://endetect.com/wp-content/uploads/2021/08/azure.svg",
+    alt: "Azure logo",
+    name: "Azure",
+  },
+  {
+    src: "https://endetect.com/wp-content/uploads/2021/08/digital-ocean.svg",
+    alt: "Digital Ocean logo",
+    name: "Digital Ocean",
+  },
+  // Add more providers here if they were in the carousel
+];
 const integrationLogos = [
   {
     src: "https://endetect.com/wp-content/uploads/2021/08/slack-int.svg",
@@ -25,24 +42,49 @@ const integrationLogos = [
 
 const IntegrationsSection = () => {
   return (
-    <section className="mt-5 py-10 bg-white">
+    <section className=" py-[60px] flex flex-col gap-[60px] bg-white">
       {/* ID from original: c1b9d4b */}
       {/* Original CSS: background-color: #FFFFFF; padding: 40px 0px; margin-top: 21px; */}
       {/* Using mt-5 (20px), py-10 (40px) */}
-      <div className="container mx-auto px-4 text-center">
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold font-montserrat text-gray-800 mb-4">
-          INTEGRATIONS
-        </h1>
-        <div className="w-24 h-1 bg-endetect-green mx-auto mb-12 md:mb-16"></div>
+      <div className="flex flex-col gap-5">
+        <div>
+          <h1 className="text-[39px] font-bold text-center  text-[#3A3A3A] leading-[55px]">
+            INTEGRATIONS
+          </h1>
+          <div className="w-[133px] border border-[#24C16F] mx-auto"></div>
+        </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 md:gap-12 items-center">
+        <div className="flex justify-around gap-[20px]  items-center">
           {integrationLogos.map((logo, index) => (
-            <div key={index} className="flex justify-center">
+            <div key={index} className=" ">
               <Image
                 src={logo.src}
                 alt={logo.alt}
-                width={120} // Adjust as needed
-                height={60} // Adjust as needed
+                width={189} // Adjust as needed
+                height={55} // Adjust as needed
+                objectFit="contain"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="flex flex-col gap-5">
+        <div>
+          <h1 className="text-[39px] font-bold text-center  text-[#3A3A3A] leading-[55px]">
+            EnDetect can be hosted with
+          </h1>
+          <div className="w-[133px] border border-[#24C16F] mx-auto"></div>
+        </div>
+
+        <div className="flex justify-center gap-[20px]  items-center">
+          {providers.map((provider) => (
+            <div key={provider.name} className="">
+              <Image
+                src={provider.src}
+                alt={provider.alt}
+                width={189}
+                height={55}
+                // className="w-[250px] h-[114px]"
                 objectFit="contain"
               />
             </div>
