@@ -66,7 +66,7 @@ const AboutStatsSection = () => {
         </div>
 
         {/* Column 2 & 3: Stats (Combined into 2 columns of stats) */}
-        <div className="w-full lg:w-1/2 flex flex-col sm:flex-row gap-8 lg:gap-[50px] justify-end items-center">
+        <div className="w-full lg:w-1/2 flex flex-col sm:flex-row gap-8 lg:gap-[50px] lg:justify-end items-center">
           <div className="flex flex-row sm:flex-col gap-8 lg:gap-[50px]">
             <CounterItem {...stats[0]} />
             <CounterItem {...stats[1]} />
