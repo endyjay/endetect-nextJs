@@ -42,15 +42,15 @@ const CloudPanelScreenshots = () => {
         {screenshotImages.map((image, index) => (
           <div
             key={index}
-            className="overflow-hidden rounded-lg shadow-lg group"
+            className="overflow-hidden w-full"
           >
             <Image
               src={image.src}
               alt={image.alt}
-              width={600} // Provide appropriate base width for aspect ratio
-              height={338} // Provide appropriate base height for aspect ratio (approx 16:9 for some)
+              width={200} 
+              height={200} 
               layout="responsive"
-              className="transform transition-transform duration-300 group-hover:scale-105"
+              className="transform transition-transform duration-300 "
             />
             {/* Captions could be added here if needed, using image.originalName */}
           </div>
