@@ -4,6 +4,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import { Sofia_Sans, Montserrat } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/layout/Footer";
+import Header from "@/components/layout/Header";
 
 const sofia = Sofia_Sans({
   subsets: ["latin"],
@@ -32,7 +33,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${sofia.variable} ${montserrat.variable}`}>
-      <body className="antialiased flex flex-col min-h-screen">
+      <body className="antialiased flex bg-white flex-col min-h-screen">
+        <Header />
         <div className="flex-grow">{children}</div>
         <Footer />
       </body>

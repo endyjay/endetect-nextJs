@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Header from "@/components/layout/Header";
 import Hero from "@/components/landing/Hero";
 import FeaturesGrid from "@/components/landing/FeaturesGrid";
 import MonitorViewTrace from "@/components/landing/MonitorViewTrace";
@@ -58,7 +57,7 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <main className="flex flex-col min-h-screen">
-      <Header />
+      
       <Hero />
       <FeaturesGrid />
       <MonitorViewTrace />

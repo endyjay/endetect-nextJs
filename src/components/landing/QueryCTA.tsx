@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const QueryCTA = () => {
   return (
-    <section className="py-10 px-4 sm:px-8 md:px-20 bg-endetect-blue-dark bg-[#F6F6F8]">
+    <section className="py-10 px-4 sm:px-8 md:px-20 bg-endetect-blue-dark bg-white">
       <div className="bg-[#333333] flex flex-col lg:flex-row justify-between px-4 sm:px-8 md:px-[90px] py-8 md:py-[60px] items-center gap-8 lg:gap-0">
         {/* Text Content */}
         <div className="flex flex-col gap-4 w-full lg:w-1/2">
