@@ -30,36 +30,31 @@ const screenshotImages = [
 
 const CloudPanelScreenshots = () => {
   return (
-    <section className="py-16 md:py-24 bg-gray-100">
-      {/* ID from original: elementor-element-9e62393 */}
-      {/* Original background: #F6F6F8 (close to bg-gray-100) */}
-      {/* Original padding: 60px 0px (py-16 is 64px) */}
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold font-montserrat text-gray-800 mb-4">
-            Few Screenshots of EnDetect Cloud Panel
-          </h1>
-          <div className="w-24 h-1 bg-endetect-green mx-auto"></div>
-        </div>
+    <section className="py-[60px] px-[80px] gap-[50px] flex flex-col bg-[#F6F6F8]">
+      <div>
+        <h1 className="text-[39px] font-bold text-center  text-[#3A3A3A] leading-[55px]">
+          Few Screenshots of EnDetect Cloud Panel
+        </h1>
+        <div className="w-[133px] border border-[#24C16F] mx-auto"></div>
+      </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-          {screenshotImages.map((image, index) => (
-            <div
-              key={index}
-              className="overflow-hidden rounded-lg shadow-lg group"
-            >
-              <Image
-                src={image.src}
-                alt={image.alt}
-                width={600} // Provide appropriate base width for aspect ratio
-                height={338} // Provide appropriate base height for aspect ratio (approx 16:9 for some)
-                layout="responsive"
-                className="transform transition-transform duration-300 group-hover:scale-105"
-              />
-              {/* Captions could be added here if needed, using image.originalName */}
-            </div>
-          ))}
-        </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+        {screenshotImages.map((image, index) => (
+          <div
+            key={index}
+            className="overflow-hidden rounded-lg shadow-lg group"
+          >
+            <Image
+              src={image.src}
+              alt={image.alt}
+              width={600} // Provide appropriate base width for aspect ratio
+              height={338} // Provide appropriate base height for aspect ratio (approx 16:9 for some)
+              layout="responsive"
+              className="transform transition-transform duration-300 group-hover:scale-105"
+            />
+            {/* Captions could be added here if needed, using image.originalName */}
+          </div>
+        ))}
       </div>
     </section>
   );
