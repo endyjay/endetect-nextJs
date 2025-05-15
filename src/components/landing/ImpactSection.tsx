@@ -13,7 +13,7 @@ const ImpactItem: React.FC<ImpactItemProps> = ({
   iconAlt,
   title,
   description,
-  delay,
+ 
 }) => {
   return (
     <div className="flex flex-col items-center text-center px-4 gap-[20px] py-8 sm:py-[32px] bg-[#333333] text-white">

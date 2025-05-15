@@ -1,4 +1,4 @@
-import { ArrowRight, Check, ChevronRightIcon } from "lucide-react";
+import { ArrowRight, Check } from "lucide-react";
 import Link from "next/link";
 
 const Hero = () => {

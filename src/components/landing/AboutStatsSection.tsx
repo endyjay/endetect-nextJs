@@ -1,4 +1,3 @@
-import Image from "next/image"; // Though not used directly, good for consistency if icons were images
 
 interface CounterProps {
   iconClass: string; // Font Awesome class for now
