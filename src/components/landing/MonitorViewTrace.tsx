@@ -22,7 +22,12 @@ const iconBoxData = [
 const MonitorViewTrace = () => {
   return (
     <section className="py-16 md:py-24 bg-white">
-      {/* ID from original: elementor-element-b2871c2 */}
+      <div className="text-center">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold font-montserrat text-gray-800 mb-4">
+          BENEFITS OF ENDETECT
+        </h1>
+        <div className="w-24 h-1 bg-endetect-green mx-auto"></div>
+      </div>
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center lg:gap-12">
           {/* Left Column: Image */}

@@ -2,7 +2,6 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Hero from "@/components/landing/Hero";
-import IntroBlurb from "@/components/landing/IntroBlurb";
 import FeaturesGrid from "@/components/landing/FeaturesGrid";
 import MonitorViewTrace from "@/components/landing/MonitorViewTrace";
 import CloudPanelScreenshots from "@/components/landing/CloudPanelScreenshots";
@@ -63,7 +62,6 @@ export default function HomePage() {
     <main className="flex flex-col min-h-screen">
       <Header />
       <Hero />
-      <IntroBlurb />
       <FeaturesGrid />
       <MonitorViewTrace />
       <CloudPanelScreenshots />
