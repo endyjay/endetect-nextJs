@@ -16,23 +16,18 @@ const ImpactItem: React.FC<ImpactItemProps> = ({
   delay,
 }) => {
   return (
-    <div
-      className="flex flex-col rounded-lg items-center text-center p-6 py-28 bg-[#110C22] text-white  shadow-lg h-full"
-      // data-settings={{ animation: "fadeIn", animation_delay: delay }} // Placeholder for animation if implemented
-    >
+    <div className="flex flex-col items-center text-center px-4 gap-[20px]  py-[32px] bg-[#333333] text-white  ">
       <div className="mb-4">
         <Image
           src={iconSrc}
           alt={iconAlt}
-          width={80}
-          height={80}
+          width={100}
+          height={100}
           objectFit="contain"
         />
       </div>
-      <h6 className="text-lg font-semibold font-montserrat  mb-2">
-        {title}
-      </h6>
-      <p className="text-sm  leading-relaxed">{description}</p>
+      <h6 className="text-lg leading-6 font-bold">{title}</h6>
+      <p className="text-[15px] leading-[23px] font-[400]">{description}</p>
     </div>
   );
 };
@@ -69,36 +64,32 @@ const impactItemsData: ImpactItemProps[] = [
 
 const ImpactSection = () => {
   return (
-    <section className="pt-16 md:pt-24 pb-20 md:pb-32 bg-white">
-      {/* ID from original: elementor-element-4bfa0da */}
-      {/* Original background: #FFFFFF (white) */}
-      {/* Original padding: 0px 0px 120px 0px (and 50px 25px 35px 25px in other rules) */}
-      {/* Using pt-16 md:pt-24 pb-20 md:pb-32 */}
-      <div className=" px-4">
-        <div className="flex gap-8 items-stretch">
-          {/* Left Column: Title and Logo */}
-          <div className="md:col-span-1 px-10  flex flex-col justify-center items-center md:items-start text-center md:text-left p-4">
-            <h2 className="text-2xl  md:text-3xl text-nowrap font-bold font-montserrat text-gray-800 mb-3">
+    <section className="px-[80px] py-[60px] bg-white">
+      <div className="flex flex-col gap-[50px]">
+        {/* Left Column: Title and Logo */}
+        <div className=" flex justify-between items-center">
+          <div>
+            <h1 className="text-[39px] font-bold text-center  text-[#3A3A3A] leading-[55px]">
               IMPACT OF SOFTWARE
-            </h2>
-            <div className=" h-1 bg-endetect-green mb-6 mx-auto md:mx-0"></div>
-            <div className="w-72">
-              {" "}
-              {/* Container for logo to control its size */}
-              <Image
-                src="https://i0.wp.com/endetect.com/wp-content/uploads/2020/04/logo_new.png?resize=768%2C251&ssl=1"
-                alt="EnDetect Logo"
-                width={100}
-                height={60}
-                layout="responsive"
-                objectFit="contain"
-              />
-            </div>
+            </h1>
+            <div className="w-[133px] border border-[#24C16F] "></div>
           </div>
+          <div className="w-72">
+            {/* Container for logo to control its size */}
+            <Image
+              src="https://i0.wp.com/endetect.com/wp-content/uploads/2020/04/logo_new.png?resize=768%2C251&ssl=1"
+              alt="EnDetect Logo"
+              width={300}
+              height={98}
+              layout="responsive"
+              objectFit="contain"
+            />
+          </div>
+        </div>
 
-          {/* Right Columns: Impact Items */}
+        <div className="flex gap-[20px]">
           {impactItemsData.map((item, index) => (
-            <div key={index} className="md:col-span-1 ">
+            <div key={index} className=" ">
               <ImpactItem
                 iconSrc={item.iconSrc}
                 iconAlt={item.iconAlt}
