@@ -9,14 +9,14 @@ interface CounterProps {
 
 const CounterItem: React.FC<CounterProps> = ({ iconClass, value, label }) => {
   return (
-    <div className="flex flex-col items-center text-center mb-6 md:mb-0">
-      <div className="text-endetect-green text-4xl mb-3">
-        <i className={iconClass}></i>
+    <div className="flex flex-col gap-[20px] items-start  ">
+      <div className=" text-[#24C16F] ">
+        <i className={`${iconClass}  text-[50px]`}></i>
       </div>
-      <div className="text-4xl font-bold font-montserrat text-gray-800 mb-1">
+      <div className="text-[20px] leading-6 font-bold text-[#282938] ">
         {value}
       </div>
-      <div className="text-sm text-gray-600 font-semibold">{label}</div>
+      <div className="text-[17px] text-[#282938] font-[400]">{label}</div>
     </div>
   );
 };
@@ -38,41 +38,41 @@ const AboutStatsSection = () => {
   ];
 
   return (
-    <section className="py-7 bg-gray-100">
-      {/* ID from original: d41f9f0 */}
-      {/* Original CSS: background-color: #F6F6F8; padding: 25px 0px; */}
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 items-start">
-          {/* Column 1: About Us */}
-          <div className="md:col-span-1 space-y-4">
-            <h2 className="text-2xl md:text-3xl font-bold font-montserrat text-gray-800 mb-2">
-              About us
-            </h2>
-            <div className="w-16 h-1 bg-endetect-green mb-4"></div>
-            <p className="text-gray-600 leading-relaxed">
+    <section className="py-[60px] px-[80px] bg-[#F6F6F8]">
+      <div className="flex justify-between items-center">
+        {/* Column 1: About Us */}
+        <div className="w-[50%] flex flex-col gap-[20px]">
+          <div>
+            <h1 className="text-[39px] font-bold  text-[#3A3A3A] leading-[55px]">
+              About Us
+            </h1>
+            <div className="w-[133px] border border-[#24C16F]"></div>
+          </div>
+          <div>
+            <p className="text-[#3A3A3A] text-[15px] leading-6 font-[400]">
               EnDetect is a subscription based software for Employee Monitoring,
               Workplace Performance, Productivity analysis and data theft
               prevention. We have catered use-case of verticals like tech,
               e-commerce, travel, call center, publishing, healthcare across the
               India.
             </p>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-[#3A3A3A] text-[15px] leading-6 font-[400]">
               By deploying EnDetect our utmost priority is to provide innovative
               software solutions to SMBs in India and creating safe and
               productive environment for the employees and employers both.
             </p>
           </div>
+        </div>
 
-          {/* Column 2 & 3: Stats (Combined into 2 columns of stats) */}
-          <div className="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-8">
-            <div className="space-y-8">
-              <CounterItem {...stats[0]} />
-              <CounterItem {...stats[1]} />
-            </div>
-            <div className="space-y-8">
-              <CounterItem {...stats[2]} />
-              <CounterItem {...stats[3]} />
-            </div>
+        {/* Column 2 & 3: Stats (Combined into 2 columns of stats) */}
+        <div className=" flex  w-1/2  gap-[50px] justify-center items-center">
+          <div className="flex flex-col gap-[50px]">
+            <CounterItem {...stats[0]} />
+            <CounterItem {...stats[1]} />
+          </div>
+          <div className="flex flex-col gap-[50px]">
+            <CounterItem {...stats[2]} />
+            <CounterItem {...stats[3]} />
           </div>
         </div>
       </div>
