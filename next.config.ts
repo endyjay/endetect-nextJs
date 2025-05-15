@@ -1,6 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  images: {
+    domains: ["endetect.com", "i0.wp.com"],
+  },
   /* config options here */
 };
 
