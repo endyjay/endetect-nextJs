@@ -42,26 +42,26 @@ const integrationLogos = [
 
 const IntegrationsSection = () => {
   return (
-    <section className=" py-[60px] flex flex-col gap-[60px] bg-white">
+    <section className="py-[60px] px-4 sm:px-8 md:px-20 flex flex-col gap-[60px] bg-white">
       {/* ID from original: c1b9d4b */}
       {/* Original CSS: background-color: #FFFFFF; padding: 40px 0px; margin-top: 21px; */}
       {/* Using mt-5 (20px), py-10 (40px) */}
       <div className="flex flex-col gap-5">
         <div>
-          <h1 className="text-[39px] font-bold text-center  text-[#3A3A3A] leading-[55px]">
+          <h1 className="text-2xl sm:text-3xl md:text-[39px] font-bold text-center text-[#3A3A3A] leading-tight md:leading-[55px]">
             INTEGRATIONS
           </h1>
-          <div className="w-[133px] border border-[#24C16F] mx-auto"></div>
+          <div className="w-[90px] sm:w-[133px] border border-[#24C16F] mx-auto"></div>
         </div>
 
-        <div className="flex justify-around gap-[20px]  items-center">
+        <div className="flex flex-wrap justify-center gap-4 sm:gap-[20px] items-center">
           {integrationLogos.map((logo, index) => (
-            <div key={index} className=" ">
+            <div key={index} className="flex justify-center items-center">
               <Image
                 src={logo.src}
                 alt={logo.alt}
-                width={189} // Adjust as needed
-                height={55} // Adjust as needed
+                width={120}
+                height={40}
                 objectFit="contain"
               />
             </div>
@@ -70,21 +70,23 @@ const IntegrationsSection = () => {
       </div>
       <div className="flex flex-col gap-5">
         <div>
-          <h1 className="text-[39px] font-bold text-center  text-[#3A3A3A] leading-[55px]">
+          <h1 className="text-2xl sm:text-3xl md:text-[39px] font-bold text-center text-[#3A3A3A] leading-tight md:leading-[55px]">
             EnDetect can be hosted with
           </h1>
-          <div className="w-[133px] border border-[#24C16F] mx-auto"></div>
+          <div className="w-[90px] sm:w-[133px] border border-[#24C16F] mx-auto"></div>
         </div>
 
-        <div className="flex justify-center gap-[20px]  items-center">
+        <div className="flex flex-wrap justify-center gap-4 sm:gap-[20px] items-center">
           {providers.map((provider) => (
-            <div key={provider.name} className="">
+            <div
+              key={provider.name}
+              className="flex justify-center items-center"
+            >
               <Image
                 src={provider.src}
                 alt={provider.alt}
-                width={189}
-                height={55}
-                // className="w-[250px] h-[114px]"
+                width={120}
+                height={40}
                 objectFit="contain"
               />
             </div>

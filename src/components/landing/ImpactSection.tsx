@@ -16,7 +16,7 @@ const ImpactItem: React.FC<ImpactItemProps> = ({
   delay,
 }) => {
   return (
-    <div className="flex flex-col items-center text-center px-4 gap-[20px]  py-[32px] bg-[#333333] text-white  ">
+    <div className="flex flex-col items-center text-center px-4 gap-[20px] py-8 sm:py-[32px] bg-[#333333] text-white">
       <div className="mb-4">
         <Image
           src={iconSrc}
@@ -26,8 +26,10 @@ const ImpactItem: React.FC<ImpactItemProps> = ({
           objectFit="contain"
         />
       </div>
-      <h6 className="text-lg leading-6 font-bold">{title}</h6>
-      <p className="text-[15px] leading-[23px] font-[400]">{description}</p>
+      <h6 className="text-base sm:text-lg leading-6 font-bold">{title}</h6>
+      <p className="text-sm sm:text-[15px] leading-[23px] font-[400]">
+        {description}
+      </p>
     </div>
   );
 };
@@ -64,17 +66,17 @@ const impactItemsData: ImpactItemProps[] = [
 
 const ImpactSection = () => {
   return (
-    <section className="px-[80px] py-[60px] bg-white">
+    <section className="px-4 sm:px-8 md:px-[80px] py-[60px] bg-white">
       <div className="flex flex-col gap-[50px]">
         {/* Left Column: Title and Logo */}
-        <div className=" flex justify-between items-center">
-          <div>
-            <h1 className="text-[39px] font-bold text-center  text-[#3A3A3A] leading-[55px]">
+        <div className="flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-0">
+          <div className="w-full lg:w-auto">
+            <h1 className="text-2xl sm:text-3xl md:text-[39px] font-bold text-center text-[#3A3A3A] leading-tight md:leading-[55px]">
               IMPACT OF SOFTWARE
             </h1>
-            <div className="w-[133px] border border-[#24C16F] "></div>
+            <div className="w-[90px] sm:w-[133px] border border-[#24C16F] mx-auto lg:mx-0"></div>
           </div>
-          <div className="w-72">
+          <div className="w-48 sm:w-60 md:w-72 mt-6 lg:mt-0">
             {/* Container for logo to control its size */}
             <Image
               src="https://i0.wp.com/endetect.com/wp-content/uploads/2020/04/logo_new.png?resize=768%2C251&ssl=1"
@@ -87,9 +89,9 @@ const ImpactSection = () => {
           </div>
         </div>
 
-        <div className="flex gap-[20px]">
+        <div className="flex flex-col sm:flex-row gap-4 sm:gap-[20px]">
           {impactItemsData.map((item, index) => (
-            <div key={index} className=" ">
+            <div key={index} className="flex-1">
               <ImpactItem
                 iconSrc={item.iconSrc}
                 iconAlt={item.iconAlt}

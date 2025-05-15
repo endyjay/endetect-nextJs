@@ -62,15 +62,15 @@ const features = [
 const FeaturesGrid = () => {
   return (
     <>
-      <section className="py-[60px] px-20 bg-white flex flex-col gap-[50px]">
+      <section className="py-[60px] px-4 sm:px-8 md:px-20 bg-white flex flex-col gap-[50px]">
         <div className="flex flex-col gap-5 text-center">
           <div>
-            <h1 className="text-[39px] font-bold  text-[#3A3A3A] leading-[55px]">
+            <h1 className="text-2xl sm:text-3xl md:text-[39px] font-bold  text-[#3A3A3A] leading-tight md:leading-[55px]">
               Real Time Monitoring and Analysis
             </h1>
-            <div className="w-[133px] border border-[#24C16F] mx-auto"></div>
+            <div className="w-[90px] sm:w-[133px] border border-[#24C16F] mx-auto"></div>
           </div>
-          <p className="text-[17px] leading-6 font-[400]  text-[#3A3A3A]  mx-auto">
+          <p className="text-base sm:text-[17px] leading-6 font-[400]  text-[#3A3A3A]  mx-auto">
             Best Employee Monitoring and Productivity Tracking Software
           </p>
         </div>
@@ -101,7 +101,7 @@ const FeaturesGrid = () => {
                      : i == 8 && "border-t border-l"
                  }
                 
-                 text-center px-6 flex flex-col gap-2 py-[50px]  text-black `}
+                 text-center px-4 sm:px-6 flex flex-col gap-2 py-8 md:py-[50px]  text-black `}
               >
                 <div className="flex justify-center mb-4">
                   <Image
@@ -112,10 +112,10 @@ const FeaturesGrid = () => {
                     unoptimized={true}
                   />
                 </div>
-                <h6 className="font-montserrat text-[22px] font-semibold text-endetect-green mb-2.5">
+                <h6 className="font-montserrat text-lg sm:text-xl md:text-[22px] font-semibold text-endetect-green mb-2.5">
                   {feature.title}
                 </h6>
-                <p className="font-sans text-black text-base font-light leading-relaxed">
+                <p className="font-sans text-black text-sm sm:text-base font-light leading-relaxed">
                   {feature.description}
                 </p>
               </div>

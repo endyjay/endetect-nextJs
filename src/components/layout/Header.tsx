@@ -6,6 +6,7 @@ import React, { useEffect, useState } from "react";
 const Header = () => {
   const [showHeader, setShowHeader] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
     { href: "/", label: "Home" },
@@ -38,6 +39,17 @@ const Header = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
+
+  // Close mobile menu on route change (optional, for better UX)
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      const handleResize = () => {
+        if (window.innerWidth >= 768) setMobileMenuOpen(false);
+      };
+      window.addEventListener("resize", handleResize);
+      return () => window.removeEventListener("resize", handleResize);
+    }
+  }, [mobileMenuOpen]);
 
   return (
     <header
@@ -73,7 +85,8 @@ const Header = () => {
               </Link>
             </div>
 
-            <div className="flex items-center justify-between gap-10 text-nowrap  ">
+            {/* Desktop Nav & Buttons */}
+            <div className="hidden md:flex items-center justify-between gap-10 text-nowrap  ">
               <nav className="  w-full  " aria-label="Site Navigation: Top Nav">
                 <ul className="text-[#3A3A3A] leading-[150%]  text-[15px] font-[400]  flex gap-[24px]">
                   {navLinks.map((link) => (
@@ -115,8 +128,70 @@ const Header = () => {
                 </div>
               </div>
             </div>
+
+            {/* Hamburger Button for Mobile */}
+            <button
+              className="md:hidden flex flex-col justify-center items-center w-10 h-10 focus:outline-none"
+              aria-label="Open navigation menu"
+              onClick={() => setMobileMenuOpen((open) => !open)}
+            >
+              <span
+                className={`block w-7 h-0.5 bg-[#24C16F] mb-1 transition-all duration-300 ${
+                  mobileMenuOpen ? "rotate-45 translate-y-2" : ""
+                }`}
+              ></span>
+              <span
+                className={`block w-7 h-0.5 bg-[#24C16F] mb-1 transition-all duration-300 ${
+                  mobileMenuOpen ? "opacity-0" : ""
+                }`}
+              ></span>
+              <span
+                className={`block w-7 h-0.5 bg-[#24C16F] transition-all duration-300 ${
+                  mobileMenuOpen ? "-rotate-45 -translate-y-2" : ""
+                }`}
+              ></span>
+            </button>
           </div>
         </div>
+
+        {/* Mobile Menu Dropdown */}
+        {mobileMenuOpen && (
+          <div className="md:hidden bg-white shadow-lg px-6 py-4 border-t border-gray-200 animate-fade-in-down">
+            <nav aria-label="Mobile Navigation">
+              <ul className="flex flex-col gap-4 mb-4">
+                {navLinks.map((link) => (
+                  <li key={link.href} className="menu-item">
+                    <Link
+                      href={link.href}
+                      className="block text-[#3A3A3A] text-lg font-medium py-2 hover:text-[#24C16F] hover:underline"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+            <div className="flex flex-col gap-3">
+              <a
+                href="https://calendly.com/endetect"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ast-custom-button text-white bg-[#24C16F] hover:bg-[#189c56] text-[16px] font-[500] px-[20px] py-[12px] text-center transition-colors duration-300"
+              >
+                Schedule a Demo
+              </a>
+              <a
+                href="https://app.endetect.com/login.php"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ast-custom-button text-white bg-[#E56902] hover:bg-[#b0550b] text-[16px] font-[500] px-[20px] py-[12px] text-center transition-colors duration-300"
+              >
+                Login
+              </a>
+            </div>
+          </div>
+        )}
       </div>
 
       {/* TODO: Mobile Header (#ast-mobile-header) */}

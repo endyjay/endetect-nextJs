@@ -30,25 +30,22 @@ const screenshotImages = [
 
 const CloudPanelScreenshots = () => {
   return (
-    <section className="py-[60px] px-[80px] gap-[50px] flex flex-col bg-[#F6F6F8]">
+    <section className="py-[60px] px-4 sm:px-8 md:px-[80px] gap-[50px] flex flex-col bg-[#F6F6F8]">
       <div>
-        <h1 className="text-[39px] font-bold text-center  text-[#3A3A3A] leading-[55px]">
+        <h1 className="text-2xl sm:text-3xl md:text-[39px] font-bold text-center  text-[#3A3A3A] leading-tight md:leading-[55px]">
           Few Screenshots of EnDetect Cloud Panel
         </h1>
-        <div className="w-[133px] border border-[#24C16F] mx-auto"></div>
+        <div className="w-[90px] sm:w-[133px] border border-[#24C16F] mx-auto"></div>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
         {screenshotImages.map((image, index) => (
-          <div
-            key={index}
-            className="overflow-hidden w-full"
-          >
+          <div key={index} className="overflow-hidden w-full">
             <Image
               src={image.src}
               alt={image.alt}
-              width={200} 
-              height={200} 
+              width={200}
+              height={200}
               layout="responsive"
               className="transform transition-transform duration-300 "
             />
