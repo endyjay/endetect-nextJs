@@ -1,0 +1,91 @@
+interface addressesDataProps {
+  iconClass: string;
+  title: string;
+  description: string;
+  delay?: number; // for animation
+}
+
+const AddressesItem: React.FC<addressesDataProps> = ({
+  iconClass,
+
+  title,
+  description,
+}) => {
+  return (
+    <div className="flex flex-col min-h-[320px] max-h-[320px] max-w-[360px] justify-center items-center text-center px-4 gap-[20px] py-8 sm:py-[32px] bg-[#333333] text-white">
+      <div className="mb-4">
+        <i className={`${iconClass} text-[90px] text-[#24C16F]`}></i>
+      </div>
+      <h6 className="text-base sm:text-lg leading-6 font-bold">{title}</h6>
+      <p
+        dangerouslySetInnerHTML={{ __html: description }}
+        className="text-sm  sm:text-[15px] leading-[23px] font-[400]"
+      ></p>
+    </div>
+  );
+};
+
+const addressesData: addressesDataProps[] = [
+  {
+    iconClass: "fas fa-map-marker-alt",
+    title: "Marketing Address",
+    description: "A-1, Bavdhan Nagar, <br/> Pune-411021, <br/> MH, India",
+    delay: 200,
+  },
+  {
+    iconClass: "fa-regular fa-envelope",
+    title: "Email",
+    description:
+      "info@endetect.com <br/> sales@endetect.com <br/> support@endetect.com <br/> billing@endetect.com",
+    delay: 300,
+  },
+  {
+    iconClass: "fas fa-location-dot",
+    title: "Registered Address",
+    description:
+      "A-25, 3rd floor, Street No. 3, Guru Nanak Pura, <br/> Laxmi Nagar, <br/> New Delhi 110092",
+    delay: 400,
+  },
+];
+
+const Addresses = () => {
+  return (
+    <section className="px-4 sm:px-8 md:px-[80px] pt-[180px] py-[60px] bg-[#F6F6F8]">
+      <div className="flex flex-col gap-[50px] container ">
+        <div className="flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-0">
+          <div className="w-full lg:w-auto">
+            <h1 className="text-2xl sm:text-3xl mb-1.5 md:text-[39px] font-bold text-center text-[#3A3A3A] leading-tight md:leading-[55px]">
+              GET IN TOUCH
+            </h1>
+            <div className="w-[90px] sm:w-[133px] border border-[#24C16F] mx-auto lg:mx-0"></div>
+          </div>
+          <div className="">
+            <a
+              href="https://calendly.com/endetect"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ast-custom-button text-white bg-[#24C16F]  hover:bg-[#189c56] text-[16px] sm:text-[18px] font-[500]  px-[20px] sm:px-[30px] py-[12px] sm:py-[12px] transition-colors duration-300"
+            >
+              Schedule a Demo
+            </a>
+          </div>
+        </div>
+
+        <div className="flex flex-col  sm:flex-row gap-4 sm:gap-[20px]">
+          {addressesData.map((item, index) => (
+            <div key={index} className="flex-1">
+              <AddressesItem
+                iconClass={item.iconClass}
+                title={item.title}
+                description={item.description}
+                delay={item.delay}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Addresses;

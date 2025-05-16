@@ -96,7 +96,7 @@ const Header = () => {
                     >
                       <Link
                         href={link.href}
-                        className="menu-link  hover:text-endetect-green rounded-md text-lg font-medium"
+                        className="leading-[150%] text-lg font-[400] --font-sofia-sans"
                       >
                         {link.label}
                       </Link>
