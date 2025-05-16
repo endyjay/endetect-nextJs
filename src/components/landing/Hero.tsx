@@ -6,7 +6,7 @@ const Hero = () => {
     <section className="relative mt-[125px] w-full h-[400px] md:h-[550px] flex items-center justify-center">
       {/* Background overlay with opacity */}
       <div
-        className=" container fixed top-0 left-0 inset-0 bg-[url('/images/hero-image.png')] bg-cover bg-center opacity-25 -z-10"
+        className="  fixed top-0 left-0 inset-0 bg-[url('/images/hero-image.png')] bg-cover bg-center opacity-25 -z-10"
         aria-hidden="true"
       ></div>
       {/* Content */}

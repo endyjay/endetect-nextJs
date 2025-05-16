@@ -65,7 +65,7 @@ const Softwares = () => {
       {/* Using mt-5 (20px), py-10 (40px) */}
       <div className="flex flex-col gap-5">
         <div>
-          <h1 className="text-2xl sm:text-3xl md:text-[39px] font-bold text-center text-[#3A3A3A] leading-tight md:leading-[55px]">
+          <h1 className="text-2xl sm:text-3xl mb-1.5 md:text-[39px] font-bold text-center text-[#3A3A3A] leading-tight md:leading-[55px]">
             The most trusted software
           </h1>
           <div className="w-[90px] sm:w-[133px] border border-[#24C16F] mx-auto"></div>
@@ -90,12 +90,12 @@ const Softwares = () => {
       </div>
       <div className="flex flex-col gap-5">
         <div>
-          <h1 className="text-2xl text-center sm:text-3xl md:text-[39px] font-bold  text-[#3A3A3A] leading-tight md:leading-[55px]">
+          <h1 className="text-2xl mb-1.5 text-center sm:text-3xl md:text-[39px] font-bold  text-[#3A3A3A] leading-tight md:leading-[55px]">
             Our Customers{" "}
           </h1>
           <div className="w-[90px] sm:w-[133px] border border-[#24C16F] mx-auto"></div>
         </div>
-        <p className="text-base sm:text-[17px] leading-6 font-[400] mb-4 text-[#3A3A3A]  mx-auto">
+        <p className="text-base --font-sofia-sans sm:text-[17px] leading-6 font-[400] mb-4 text-[#3A3A3A]  mx-auto">
           EnDetect is helping thousands of customers around the globe making the
           workplace a productive zone.
         </p>
