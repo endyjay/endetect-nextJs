@@ -1,18 +1,23 @@
+import { ArrowLeft } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const notFound = () => {
   return (
-    <div className=" pt-[150px] flex flex-col items-center justify-center  h-fit bg-[linear-gradient(90deg,_rgba(171,195,244,1)_0%,_rgba(228,239,254,1)_27%,_rgba(214,221,253,1)_35%,_rgba(61,83,199,1)_89%)]">
-        <h1 className="text-2xl font-bold text-yellow-300 text-shadow-2xs mb-2">Under Construction</h1>
-      <Image
-        src="/images/construction.webp"
-        alt="404"
-        objectFit="contain"
-        width={300}
-        className="opacity-90 rounded-2xl"
-        height={100}
-      />
+    <div className="min-h-screen pt-[120px] bg-white flex flex-col gap-6 items-center justify-center">
+      <i className="fa-solid fa-ghost text-5xl text-[#E56902]"></i>
+      <h1 className="text-2xl font-bold text-gray-600">404 - Page Not Found</h1>
+      <p className="text-gray-500">
+        Oops! The page you're looking for doesn't exist or has been moved.
+      </p>
+      <Link
+        className="bg-[#24C16F] p-2 flex items-center hover:bg-[#24C16F]/80 transition-all duration-300 gap-2 text-white font-semibold "
+        href="/"
+      >
+        <ArrowLeft />
+        Go back Home
+      </Link>
     </div>
   );
 };
