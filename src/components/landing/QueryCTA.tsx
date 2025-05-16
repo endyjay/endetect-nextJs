@@ -22,7 +22,7 @@ const QueryCTA = () => {
         <div className="text-center lg:text-left w-full lg:w-auto">
           <Link
             href="/contact" // Original link: contact/index.html
-            className="text-base sm:text-[16px] -ml-2 text-white font-semibold bg-green-500 py-3 px-5 hover:bg-[#169050] flex items-center justify-center text-lg w-fit duration-300 "
+            className="text-base sm:text-[16px] -ml-2 text-white font-semibold bg-green-500 py-3 px-5 hover:bg-[#169050] flex items-center justify-center  w-fit duration-300 "
           >
             Contact Us
             <span>
