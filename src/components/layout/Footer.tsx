@@ -8,7 +8,7 @@ interface FooterLinkProps {
 
 const FooterLinkItem: React.FC<FooterLinkProps> = ({ href, text }) => (
   <li className="mb-2">
-    <Link href={href} className=" ">
+    <Link href={href} className="--font-sofia-sans ">
       {text}
     </Link>
   </li>
@@ -60,7 +60,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#EEEEEE] text-[#3A3A3A]">
       <div className="py-[50px] px-4 sm:px-8 md:px-[80px]">
-        <div className="flex flex-col lg:flex-row justify-between items-start gap-10 lg:gap-0">
+        <div className="flex container flex-col lg:flex-row justify-between items-start gap-10 lg:gap-0">
           {/* Column 1: Logo, Address, Social */}
           <div className="flex flex-col gap-[20px] mb-8 lg:mb-0 w-full lg:w-auto">
             <Link href="/" className="inline-block">
@@ -129,7 +129,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center items-center">
+        <div className="flex container justify-center items-center">
           <hr className="text-[#C1C1C1] w-full my-[20px]" />
         </div>
         <p className="text-center text-sm sm:text-[15px] leading-[23px] font-[400]">

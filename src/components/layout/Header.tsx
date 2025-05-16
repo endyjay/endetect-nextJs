@@ -71,7 +71,7 @@ const Header = () => {
 
         {/* Main Header Section */}
         <div className="px-[80px] py-[16px]  bg-white">
-          <div className=" w-full  flex justify-between items-center">
+          <div className=" w-full container  flex justify-between items-center">
             <div className="w-[162px]  h-[54px]">
               <Link href="/" aria-current="page">
                 {/* TODO: Replace with actual logo using next/image */}
@@ -86,9 +86,9 @@ const Header = () => {
             </div>
 
             {/* Desktop Nav & Buttons */}
-            <div className="hidden md:flex items-center justify-between gap-10 text-nowrap  ">
+            <div className="hidden  md:flex items-center justify-between gap-[33px] text-nowrap  ">
               <nav className="  w-full  " aria-label="Site Navigation: Top Nav">
-                <ul className="text-[#3A3A3A] leading-[150%]  text-[15px] font-[400]  flex gap-[24px]">
+                <ul className="text-[#3A3A3A] leading-[150%]  text-[18px] font-[400]  flex gap-[24px]">
                   {navLinks.map((link) => (
                     <li
                       key={link.href}

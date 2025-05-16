@@ -22,54 +22,56 @@ const iconBoxData = [
 
 const MonitorViewTrace = () => {
   return (
-    <section className="py-[50px] px-4 sm:px-8 md:px-20 gap-[40px] flex flex-col bg-white">
-      <div>
-        <h1 className="text-2xl sm:text-3xl md:text-[39px] font-bold text-center  text-[#3A3A3A] leading-tight md:leading-[55px]">
-          BENEFITS OF ENDETECT
-        </h1>
-        <div className="w-[90px] sm:w-[133px] border border-[#24C16F] mx-auto"></div>
-      </div>
-      <div className="container mx-auto px-0 sm:px-4">
-        <div className="flex flex-col lg:flex-row items-center lg:gap-12 gap-8">
-          {/* Left Column: Image */}
-          <div className="w-full max-w-[635px] h-auto lg:h-[367px] mb-6 lg:mb-0">
-            <Image
-              src="https://i0.wp.com/endetect.com/wp-content/uploads/2021/08/activtiy_endy-01-copy.png?w=1160&ssl=1"
-              alt="EnDetect Activity Monitoring Dashboard"
-              width={1160}
-              height={367}
-              layout="responsive"
-              className="rounded-lg "
-              unoptimized={true}
-            />
-          </div>
+    <section className="py-[50px] px-4 sm:px-8 md:px-20  bg-white">
+      <div className="container gap-[40px] flex flex-col">
+        <div>
+          <h1 className="text-2xl sm:text-3xl md:text-[39px] font-bold text-center mb-1.5  text-[#3A3A3A] leading-tight md:leading-[55px]">
+            BENEFITS OF ENDETECT
+          </h1>
+          <div className="w-[90px] sm:w-[133px] border border-[#24C16F] mx-auto"></div>
+        </div>
+        <div className="container mx-auto px-0 sm:px-4">
+          <div className="flex flex-col lg:flex-row items-center lg:gap-12 gap-8">
+            {/* Left Column: Image */}
+            <div className="w-full max-w-[635px] h-auto lg:h-[367px] mb-6 lg:mb-0">
+              <Image
+                src="https://i0.wp.com/endetect.com/wp-content/uploads/2021/08/activtiy_endy-01-copy.png?w=1160&ssl=1"
+                alt="EnDetect Activity Monitoring Dashboard"
+                width={1160}
+                height={367}
+                layout="responsive"
+                className="rounded-lg "
+                unoptimized={true}
+              />
+            </div>
 
-          {/* Right Column: Text Content & Button */}
-          <div className="w-full max-w-[455px] flex flex-col gap-6">
-            {iconBoxData.map((item, index) => (
-              <div key={index} className="flex items-start  ">
-                {/* <ArrowRightCircleIcon className="w-7 h-7 text-endetect-green mr-4 flex-shrink-0 mt-1" /> */}
-                <div>
-                  <h4 className="text-base sm:text-lg flex  leading-[24px] font-bold font-montserrat text-[#282938] ">
-                    <ArrowRight className="w-5 h-5 text-[#24C16F] -ml-2 mr-2 " />{" "}
-                    {item.title}
-                  </h4>
-                  <p className="text-[#282938] ml-5 text-sm sm:text-[15px] leading-[23px] font-[400] font-sans">
-                    {item.description}
-                  </p>
+            {/* Right Column: Text Content & Button */}
+            <div className="w-full max-w-[455px] flex flex-col gap-6">
+              {iconBoxData.map((item, index) => (
+                <div key={index} className="flex items-start  ">
+                  {/* <ArrowRightCircleIcon className="w-7 h-7 text-endetect-green mr-4 flex-shrink-0 mt-1" /> */}
+                  <div>
+                    <p className="text-base sm:text-lg flex  leading-[24px] font-bold font-montserrat text-[#282938] ">
+                      <ArrowRight className="w-5 h-5 text-[#24C16F] -ml-2 mr-2 " />{" "}
+                      {item.title}
+                    </p>
+                    <p className="text-[#282938] ml-5 text-sm sm:text-[15px] leading-[23px] font-[400] font-sans">
+                      {item.description}
+                    </p>
+                  </div>
                 </div>
+              ))}
+              <div className=" text-center lg:text-left">
+                <Link
+                  href="/contact" // Original link: contact/index.html
+                  className="text-[15px] sm:text-[16px] -ml-2 text-white font-semibold bg-green-500 py-3 px-5 hover:bg-[#169050] flex items-center justify-center text-lg w-fit duration-300 "
+                >
+                  Start Monitoring Now
+                  <span>
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </span>
+                </Link>
               </div>
-            ))}
-            <div className=" text-center lg:text-left">
-              <Link
-                href="/contact" // Original link: contact/index.html
-                className="text-[15px] sm:text-[16px] -ml-2 text-white font-semibold bg-green-500 py-3 px-5 hover:bg-[#169050] flex items-center justify-center text-lg w-fit duration-300 "
-              >
-                Start Monitoring Now
-                <span>
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </span>
-              </Link>
             </div>
           </div>
         </div>

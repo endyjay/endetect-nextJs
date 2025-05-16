@@ -67,11 +67,11 @@ const impactItemsData: ImpactItemProps[] = [
 const ImpactSection = () => {
   return (
     <section className="px-4 sm:px-8 md:px-[80px] py-[60px] bg-white">
-      <div className="flex flex-col gap-[50px]">
+      <div className="flex flex-col gap-[50px] container">
         {/* Left Column: Title and Logo */}
         <div className="flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-0">
           <div className="w-full lg:w-auto">
-            <h1 className="text-2xl sm:text-3xl md:text-[39px] font-bold text-center text-[#3A3A3A] leading-tight md:leading-[55px]">
+            <h1 className="text-2xl sm:text-3xl mb-1.5 md:text-[39px] font-bold text-center text-[#3A3A3A] leading-tight md:leading-[55px]">
               IMPACT OF SOFTWARE
             </h1>
             <div className="w-[90px] sm:w-[133px] border border-[#24C16F] mx-auto lg:mx-0"></div>

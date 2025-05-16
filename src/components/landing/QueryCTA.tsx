@@ -4,11 +4,11 @@ import Link from "next/link";
 const QueryCTA = () => {
   return (
     <section className="py-10 px-4 sm:px-8 md:px-20 bg-endetect-blue-dark bg-white">
-      <div className="bg-[#333333] flex flex-col lg:flex-row justify-between px-4 sm:px-8 md:px-[90px] py-8 md:py-[60px] items-center gap-8 lg:gap-0">
+      <div className="bg-[#333333] container flex flex-col lg:flex-row justify-between px-4 sm:px-8 md:px-[90px] py-8 md:py-[60px] items-center gap-8 lg:gap-0">
         {/* Text Content */}
         <div className="flex flex-col gap-4 w-full lg:w-1/2">
           <div>
-            <h1 className="text-2xl sm:text-3xl md:text-[42px] font-bold text-white leading-tight md:leading-[55px]">
+            <h1 className="text-2xl sm:text-3xl md:text-[42px] mb-1.5 font-bold text-white leading-tight md:leading-[55px]">
               Have Queries?
             </h1>
             <div className="w-[90px] sm:w-[133px] border border-[#24C16F] "></div>

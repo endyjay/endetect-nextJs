@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
-import { Sofia_Sans, Montserrat } from "next/font/google";
+import { Roboto, Montserrat, Sofia_Sans } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
 
-const sofia = Sofia_Sans({
+const roboto = Roboto({
   subsets: ["latin"],
-  weight: ["400", "600", "700"],
+  weight: ["400", "500", "600", "700"],
   style: ["normal"],
-  variable: "--font-sofia-sans",
+  variable: "--font-roboto",
 });
 
 const montserrat = Montserrat({
@@ -18,6 +18,13 @@ const montserrat = Montserrat({
   weight: ["400", "500", "600", "700"],
   style: ["normal"],
   variable: "--font-montserrat",
+});
+
+const sofia_sans = Sofia_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  style: ["normal"],
+  variable: "--font-sofia-sans",
 });
 
 export const metadata: Metadata = {
@@ -32,8 +39,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${sofia.variable} ${montserrat.variable}`}>
-      <body className="antialiased flex bg-white flex-col min-h-screen">
+    <html
+      lang="en"
+      className={`${roboto.className} ${montserrat.variable} ${sofia_sans.variable} `}
+    >
+      <body className={`  flex bg-white flex-col min-h-screen`}>
         <Header />
         <div className="flex-grow">{children}</div>
         <Footer />

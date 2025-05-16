@@ -40,24 +40,24 @@ const AboutStatsSection = () => {
 
   return (
     <section className="py-[60px] px-4 sm:px-8 md:px-[80px] bg-[#F6F6F8]">
-      <div className="flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-0">
+      <div className="flex flex-col container lg:flex-row justify-between items-center gap-10 lg:gap-0">
         {/* Column 1: About Us */}
         <div className="w-full lg:w-1/2 flex flex-col gap-[20px] mb-8 lg:mb-0">
           <div>
-            <h1 className="text-2xl sm:text-3xl md:text-[39px] font-bold text-[#3A3A3A] leading-tight md:leading-[55px]">
+            <h1 className="text-2xl mb-1.5 sm:text-3xl md:text-[39px] font-bold text-[#3A3A3A] leading-tight md:leading-[55px]">
               About Us
             </h1>
             <div className="w-[90px] sm:w-[133px] border border-[#24C16F]"></div>
           </div>
-          <div>
-            <p className="text-[#3A3A3A] text-sm sm:text-[15px] leading-6 font-[400]">
+          <div className="--font-sofia-sans">
+            <p className="text-[#3A3A3A]  text-sm sm:text-[15px] leading-6 font-[400]">
               EnDetect is a subscription based software for Employee Monitoring,
               Workplace Performance, Productivity analysis and data theft
               prevention. We have catered use-case of verticals like tech,
               e-commerce, travel, call center, publishing, healthcare across the
               India.
             </p>
-            <p className="text-[#3A3A3A] text-sm sm:text-[15px] leading-6 font-[400]">
+            <p className="text-[#3A3A3A]  text-sm sm:text-[15px] leading-6 font-[400]">
               By deploying EnDetect our utmost priority is to provide innovative
               software solutions to SMBs in India and creating safe and
               productive environment for the employees and employers both.
