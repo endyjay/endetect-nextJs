@@ -111,7 +111,7 @@ const Header = () => {
                     href="https://calendly.com/endetect"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="ast-custom-button text-white bg-[#24C16F]  hover:bg-[#189c56] text-[16px] sm:text-[18px] font-[500]  px-[20px] sm:px-[30px] py-[12px] sm:py-[12px] transition-colors duration-300"
+                    className="ast-custom-button text-white bg-[#24C16F]  hover:bg-[#189c56] text-[16px] font-[500]  px-[20px] sm:px-[30px] py-[12px] sm:py-[12px] transition-colors duration-300"
                   >
                     Schedule a Demo
                   </a>
@@ -121,7 +121,7 @@ const Header = () => {
                     href="https://app.endetect.com/login.php"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="ast-custom-button text-white bg-[#E56902] hover:bg-[#b0550b] text-[16px] sm:text-[18px] font-[500]  px-[20px] sm:px-[30px] py-[12px] sm:py-[12px] transition-colors duration-300"
+                    className="ast-custom-button text-white bg-[#E56902] hover:bg-[#b0550b] text-[16px] font-[500]  px-[20px] sm:px-[30px] py-[12px] sm:py-[12px] transition-colors duration-300"
                   >
                     Login
                   </a>
