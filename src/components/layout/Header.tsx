@@ -70,13 +70,12 @@ const Header = () => {
         </div>
 
         {/* Main Header Section */}
-        <div className="px-[80px] py-[16px]  bg-white">
+        <div className="px-[16px] py-[16px]  bg-white">
           <div className=" w-full container  flex justify-between items-center">
             <div className="w-[162px]  h-[54px]">
               <Link href="/" aria-current="page">
-                {/* TODO: Replace with actual logo using next/image */}
                 <Image
-                  src="https://i0.wp.com/endetect.com/wp-content/uploads/2020/04/logo_new.png?resize=768%2C251&ssl=1"
+                  src="/images/logo.png"
                   alt="Endetect"
                   width={200}
                   height={200}

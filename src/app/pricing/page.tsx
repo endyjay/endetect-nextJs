@@ -1,8 +1,13 @@
+import DemoCard from '@/components/pricing/DemoCard'
+import PriceTable from '@/components/pricing/PriceTable'
 import React from 'react'
 
 const page = () => {
   return (
-    <div>page</div>
+    <div>
+      <PriceTable />
+      <DemoCard />
+    </div>
   )
 }
 
