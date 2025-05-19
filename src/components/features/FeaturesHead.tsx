@@ -9,8 +9,8 @@ const FeaturesHead = () => {
           <Image
             src={"/images/features-1.png"}
             alt="feature-head"
-            width={500}
-            height={500}
+            width={800}
+            height={800}
           />
         </div>
         <div className="flex flex-col container lg:flex-row justify-between items-center gap-10 lg:gap-0">
