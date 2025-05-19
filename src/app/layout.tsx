@@ -42,7 +42,7 @@ export default function RootLayout({
       lang="en"
       className={`${roboto.className} ${montserrat.variable} ${sofia_sans.variable}`}
     >
-      <body className={`flex bg-white flex-col min-h-screen`}>
+      <body className={`flex bg-white flex-col min-h-screen font-['Sofia_Pro']`}>
         <Header />
         <div className="flex-grow">{children}</div>
         <Footer />
