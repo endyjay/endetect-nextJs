@@ -70,7 +70,7 @@ const Header = () => {
         </div>
 
         {/* Main Header Section */}
-        <div className="px-[80px] py-[16px]  bg-white">
+        <div className="px-4 py-4  bg-white">
           <div className=" w-full container  flex justify-between items-center">
             <div className="w-[162px]  h-[54px]">
               <Link href="/" aria-current="page">

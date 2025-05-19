@@ -26,15 +26,47 @@ body {
   color: var(--foreground);
 }
 .container {
-  max-width: 1120px;
+  max-width: 1152px;
   margin: 0 auto;
+  padding: 0 16px;
 }
 
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.39;
+}
+
+h2 {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.30;
+}
+h3 {
+  font-size: 39px;
+  font-weight: 700;
+  line-height: 1.41;
+}
+h4 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.33;
+}
+h5 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.33;
+}
+h6 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.33;
+}
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-montserrat), "sans-serif";
 }
