@@ -140,3 +140,15 @@ h6 {
     font-size: 18px;
   }
 }
+
+.pricing-policy ul,
+.pricing-policy li {
+ list-style: disc !important;
+}
+.pricing-policy ul{
+  margin-left: 40px;
+  margin-bottom: 20.5px;
+}
+.pricing-policy h6{
+  margin-bottom: 20px;
+}
