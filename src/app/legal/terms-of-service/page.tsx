@@ -5,10 +5,10 @@ const Page = () => {
     <div className='min-h-[100vh] bg-[#F6F6F8] py-[10px]'>
       <div className='container'>
         <div className='pb-[23px]'>
-          <h1 className='text-center uppercase'>Terms of Service</h1>
+          <h1 className='text-center uppercase font-[600]!'>Terms of Service</h1>
           <span className='w-[100%] my-[15px] mx-auto block max-w-[145px] md:max-w-[235px] h-[1px] bg-black' />
         </div>
-        <div className="elementor-widget-container">
+        <div className="text-[14px] leading-[22px]">
           <p className='mb-[24px]' >This Agreement is made, entered into and executed at New Delhi, India on current date.</p>
           <p className='mb-[24px]' >BETWEEN:-</p>
           <p className='mb-[24px]' >Innocode Ventures (hereinafter referred to as "Innocode") AND Yourself (hereinafter referred to as "User");</p>

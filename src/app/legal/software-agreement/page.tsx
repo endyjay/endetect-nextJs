@@ -5,7 +5,7 @@ const Page = () => {
         <div className='min-h-[100vh] bg-[#F6F6F8] py-[10px]'>
             <div className='container'>
                 <div className='pb-[23px]'>
-                    <h1 className='text-center uppercase'>Software License Agreement
+                    <h1 className='text-center uppercase font-[600]!'>Software License Agreement
                     </h1>
                     <span className='w-[100%] my-[15px] mx-auto block max-w-[145px] md:max-w-[235px] h-[1px] bg-black' />
                 </div>
