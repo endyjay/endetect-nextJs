@@ -62,7 +62,7 @@ const features = [
 const FeaturesGrid = () => {
   return (
     <>
-      <section className="py-[60px] px-4 sm:pwhited:px-20 bg-white flex ">
+      <section className="py-[60px] px-4 bg-white flex ">
         <div className="container flex flex-col gap-[50px]">
           {" "}
           <div className="flex flex-col gap-5 text-center">
@@ -83,27 +83,26 @@ font-['Sofia_Pro'] font-[400]  text-[#3A3A3A]  mx-auto">
                 <div
                   key={i}
                   className={`
-                 ${
-                   i == 0
-                     ? "lg:border-b lg:border-r"
-                     : i == 1
-                     ? "lg:border-b lg:border-r lg:border-l"
-                     : i == 2
-                     ? "lg:border-b lg:border-l"
-                     : i == 3
-                     ? "lg:border-r lg:border-b lg:border-t"
-                     : i == 4
-                     ? "lg:border-b lg:border-r lg:border-t lg:border-l"
-                     : i == 5
-                     ? "lg:border-t lg:border-l lg:border-b"
-                     : i == 6
-                     ? "lg:border-t lg:border-r"
-                     : i == 7
-                     ? "lg:border-r lg:border-l lg:border-t"
-                     : i == 8 && "lg:border-t lg:border-l"
-                 }
+                 ${i == 0
+                      ? "border-b sm:border-r"
+                      : i == 1
+                        ? "border-b lg:border-r lg:border-l"
+                        : i == 2
+                          ? "border-b sm:border-r lg:border-r-0 lg:border-l"
+                          : i == 3
+                            ? "lg:border-r  border-b lg:border-t"
+                            : i == 4
+                              ? "border-b sm:border-r lg:border-t lg:border-l"
+                              : i == 5
+                                ? "lg:border-t lg:border-l border-b"
+                                : i == 6
+                                  ? "lg:border-t sm:border-r border-b lg:border-b-0"
+                                  : i == 7
+                                    ? "lg:border-r border-b lg:border-b-0 lg:border-l lg:border-t"
+                                    : i == 8 && "lg:border-t sm:border-r lg:border-r-0 lg:border-l lg:border-b-0"
+                    }
                 
-                 text-center px-4 sm:px-6 flex flex-col gap-2 py-8 md:py-[50px]  text-black `}
+                 text-center px-4 sm:px-6 flex  flex-col gap-2 py-8 md:py-[50px]  text-black `}
                 >
                   <div className="flex justify-center mb-4">
                     <Image

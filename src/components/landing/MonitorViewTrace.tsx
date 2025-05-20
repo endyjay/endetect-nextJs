@@ -51,7 +51,7 @@ const MonitorViewTrace = () => {
                 <div key={index} className="flex items-start  ">
                   {/* <ArrowRightCircleIcon className="w-7 h-7 text-endetect-green mr-4 flex-shrink-0 mt-1" /> */}
                   <div>
-                    <p className="text-base sm:text-lg flex  leading-[24px] font-bold font-montserrat text-[#282938] ">
+                    <p className="text-base sm:text-lg flex leading-[24px] font-bold font-montserrat text-[#282938] ">
                       <ArrowRight className="w-5 h-5 text-[#24C16F] -ml-2 mr-2 " />{" "}
                       {item.title}
                     </p>
@@ -61,10 +61,10 @@ const MonitorViewTrace = () => {
                   </div>
                 </div>
               ))}
-              <div className=" text-center lg:text-left">
+              <div className="lg:text-left">
                 <Link
                   href="/contact" // Original link: contact/index.html
-                  className="text-[15px] sm:text-[16px] -ml-2 text-white font-semibold bg-green-500 py-3 px-5 hover:bg-[#169050] flex items-center justify-center text-lg w-fit duration-300 "
+                  className="text-[15px] sm:text-[16px]  md:-ml-2 text-white font-semibold bg-green-500 py-3 px-5 hover:bg-[#169050] flex items-center justify-center text-lg w-fit duration-300 "
                 >
                   Start Monitoring Now
                   <span>
