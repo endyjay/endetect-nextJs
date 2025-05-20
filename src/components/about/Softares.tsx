@@ -95,7 +95,8 @@ const Softwares = () => {
           </h1>
           <div className="w-[90px] sm:w-[133px] border border-[#24C16F] mx-auto"></div>
         </div>
-        <p className="text-base --font-sofia-sans sm:text-[17px] leading-6 font-[400] mb-4 text-[#3A3A3A]  mx-auto">
+        <p className="text-base 
+font-['Sofia_Pro'] sm:text-[17px] leading-6 font-[400] mb-4 text-[#3A3A3A]  mx-auto">
           EnDetect is helping thousands of customers around the globe making the
           workplace a productive zone.
         </p>

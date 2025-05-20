@@ -72,7 +72,8 @@ const FeaturesGrid = () => {
               </h1>
               <div className="w-[90px] sm:w-[133px] border border-[#24C16F] mx-auto"></div>
             </div>
-            <p className="text-base sm:text-[17px] leading-6 --font-sofia-sans font-[400]  text-[#3A3A3A]  mx-auto">
+            <p className="text-base sm:text-[17px] leading-6 
+font-['Sofia_Pro'] font-[400]  text-[#3A3A3A]  mx-auto">
               Best Employee Monitoring and Productivity Tracking Software
             </p>
           </div>

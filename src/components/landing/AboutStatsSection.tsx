@@ -49,7 +49,8 @@ const AboutStatsSection = () => {
             </h1>
             <div className="w-[90px] sm:w-[133px] border border-[#24C16F]"></div>
           </div>
-          <div className="--font-sofia-sans">
+          <div className="
+font-['Sofia_Pro']">
             <p className="text-[#3A3A3A]  text-sm sm:text-[15px] leading-6 font-[400]">
               EnDetect is a subscription based software for Employee Monitoring,
               Workplace Performance, Productivity analysis and data theft

@@ -74,12 +74,14 @@ const PriceTable = () => {
                     key={plan.key}
                     className={`bg-[#F0F0F2]  py w-1/4 align-top text-center ${idx !== plans.length - 1 ? 'border-r border-[#3D3D3C] ' : ''} ${idx === plans.length - 1 ? "" : ""}`}
                   >
-                    <div className="font-bold text-[19px] leading-6 --font-sofia-sans bg-[#130826] px-6 py-4 text-lg mb-2">{plan.name}</div>
+                    <div className="font-bold text-[19px] leading-6 
+font-['Sofia_Pro'] bg-[#130826] px-6 py-4 text-lg mb-2">{plan.name}</div>
                     <div className='flex flex-col gap-4' >
                       <div>
                         <div className="mb-1">
                           <span className="line-through text-[15px] leading-5 font-[500] text-gray-300 mr-1">{plan.priceOld}</span>
-                          <span className="text-[#4ec08d] font-bold text-[19px] leading-6 --font-sofia-sans">{plan.price}</span>
+                          <span className="text-[#4ec08d] font-bold text-[19px] leading-6 
+font-['Sofia_Pro']">{plan.price}</span>
                         </div>
                         <div className="text-[15px] text-[#000000] leading-5 font-[500] mb-1">{plan.period}</div>
                         <div className="text-[15px] text-[#000000] leading-5 font-[500] mb-1">{plan.billed}</div>
