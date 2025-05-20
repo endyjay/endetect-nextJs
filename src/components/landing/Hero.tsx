@@ -7,6 +7,7 @@ const Hero = () => {
       {/* Background overlay with opacity */}
       <div
         className="fixed top-0 left-0 inset-0 bg-[url('/images/hero-image.png')] bg-cover bg-center opacity-25 -z-10"
+        className="fixed top-0 left-0 inset-0 bg-[url('/images/hero-image.png')] bg-cover bg-center opacity-25 -z-10"
         aria-hidden="true"
       ></div>
       <div className="relative max-w-[785px] mx-auto flex justify-center items-center py-[70px] md:py-[102px]  w-full z-10">
@@ -14,6 +15,7 @@ const Hero = () => {
           <h1 className=" text-white! text-center">
             Employee Monitoring and Productivity Tracking Solution
           </h1>
+          <div className="flex py-1 flex-col md:flex-row items-center w-full --font-roboto justify-between md:text-xl font-bold  gap-5 md:gap-0">
           <div className="flex py-1 flex-col md:flex-row items-center w-full --font-roboto justify-between md:text-xl font-bold  gap-5 md:gap-0">
             <div className="flex flex-col gap-2 items-start justify-center w-full md:w-auto">
               <span className="text-[15px] md:text-[16px] flex items-center ">
