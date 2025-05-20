@@ -17,7 +17,7 @@ const Hero = () => {
             Employee Monitoring and 
             Productivity Tracking Solution
           </h1>
-          <div className="flex max-w-[760px] mx-auto flex-col md:flex-row items-center w-full --font-roboto justify-between md:text-xl font-bold  md:gap-5 gap-2">
+          <div className="flex flex-col md:flex-row items-center w-full --font-roboto justify-between md:text-xl font-bold  gap-5 md:gap-0">
             <div className="flex flex-col gap-2 items-start justify-center w-full md:w-auto">
               <span className="text-[15px] md:text-[16px] flex items-center ">
                 <Check className="mr-2 bg-[#24C16F] text-white rounded-full  h-5 w-5" />
@@ -44,7 +44,7 @@ const Hero = () => {
             href="/features" // Assuming best-pc-monitoring-software/index.html maps to /features
             className="text-nowrap flex bg-[#24C16F] items-center justify-center hover:bg-[#169050] text-white text-base md:text-lg py-3 px-5 font-[500] duration-300 "
           >
-            Know More{" "}
+            Know More
             <span>
               <ArrowRight className="ml-2 h-5 w-5" />
             </span>
