@@ -17,7 +17,7 @@ const DemoCard = () => {
         {/* Button */}
         <div className="text-center  lg:text-left flex flex-col items-center justify-center ">
           <Link
-            href="https://in.bigin.online/org60041256722/bookings/demo" // Original link: contact/index.html
+            href="https://in.bigin.online/org60041256722/bookings/demo" 
             className="text-base sm:text-[16px]  text-white font-semibold bg-green-500 py-3 px-5 hover:bg-[#169050] flex items-center justify-center  w-fit duration-300 "
           >
             Click Here for Demo
