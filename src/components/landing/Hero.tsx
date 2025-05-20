@@ -13,7 +13,7 @@ const Hero = () => {
       <div className="relative max-w-[776px] mx-auto flex justify-center items-center py-12 md:py-[102px]  w-full z-10">
         {/* Overlay from .elementor-background-overlay */}
         <div className="px-2 md:px-2 items-center flex flex-col gap-6 text-white w-full">
-          <h1 className="text-2xl sm:text-3xl md:text-5xl text-center leading-tight md:leading-[67px] lg:text-5xl font-bold  ">
+          <h1 className="text-2xl text-white! sm:text-3xl md:text-5xl text-center leading-tight md:leading-[67px] lg:text-5xl font-bold  ">
             Employee Monitoring and 
             Productivity Tracking Solution
           </h1>
