@@ -8,7 +8,7 @@ interface CounterProps {
 
 const CounterItem: React.FC<CounterProps> = ({ iconClass, value, label }) => {
   return (
-    <div className="flex flex-col gap-[20px] items-start  ">
+    <div className="flex w-full max-w-[208px] justify-center text-center  flex-col gap-[20px] items-center  ">
       <div className=" text-[#24C16F] ">
         <i className={`${iconClass}  text-[40px] sm:text-[50px]`}></i>
       </div>
@@ -42,12 +42,12 @@ const AboutStatsSection = () => {
     <section className="py-[60px] px-4 sm:px-8 md:px-[80px] bg-[#F6F6F8]">
       <div className="flex flex-col container lg:flex-row justify-between items-center gap-10 lg:gap-0">
         {/* Column 1: About Us */}
-        <div className="w-full lg:w-1/2 flex flex-col gap-[20px] mb-8 lg:mb-0">
+        <div className="w-full  lg:max-w-[547px] w-full flex flex-col gap-[20px] mb-8 lg:mb-0">
           <div>
-            <h1 className="text-2xl mb-1.5 sm:text-3xl md:text-[39px] font-bold text-[#3A3A3A] leading-tight md:leading-[55px]">
+            <h1 className="text-2xl text-center lg:text-left  mb-1.5 sm:text-3xl md:text-[39px] font-bold text-[#3A3A3A] leading-tight md:leading-[55px]">
               About Us
             </h1>
-            <div className="w-[90px] sm:w-[133px] border border-[#24C16F]"></div>
+            <div className="w-[90px] lg:float-left mx-auto sm:w-[133px] border border-[#24C16F]"></div>
           </div>
           <div className="
 font-['Sofia_Pro']">
@@ -67,12 +67,12 @@ font-['Sofia_Pro']">
         </div>
 
         {/* Column 2 & 3: Stats (Combined into 2 columns of stats) */}
-        <div className="w-full lg:w-1/2 flex flex-col sm:flex-row gap-8 lg:gap-[50px] lg:justify-end items-center">
-          <div className="flex flex-row sm:flex-col gap-8 lg:gap-[50px]">
+        <div className="w-full lg:max-w-[466px] justify-center  flex flex-col sm:flex-row gap-8 lg:gap-[50px] lg:justify-end items-center">
+          <div className="flex sm:flex-col  w-full justify-center items-center gap-[50px]">
             <CounterItem {...stats[0]} />
             <CounterItem {...stats[1]} />
           </div>
-          <div className="flex flex-row sm:flex-col gap-8 lg:gap-[50px]">
+          <div className="flex sm:flex-col  w-full justify-center items-center gap-[50px]">
             <CounterItem {...stats[2]} />
             <CounterItem {...stats[3]} />
           </div>
