@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react'
 
 const plans = [
@@ -202,9 +203,9 @@ border-[#3D3D3C] ">
                 <td className="px-6 py-6 bg-white border-r bg-[#f5f5f6] border-[#3D3D3C]"></td>
                 {plans.map((plan, idx) => (
                   <td key={plan.key} className={`px-6 py-6 text-center bg-white ${idx !== plans.length - 1 ? 'border-r border-[#3D3D3C]' : ''}`}>
-                    <button className="bg-[#24C16F] hover:bg-endetect-green-dark text-white font-semibold  px-6 py-2 transition-colors duration-200">
+                    <Link href={`https://in.bigin.online/org60041256722/bookings/demo`} className='bg-[#24C16F] --font-roboto hover:bg-endetect-green-dark text-white font-semibold  px-6 py-2 transition-colors duration-200'>
                       Schedule a Demo
-                    </button>
+                    </Link>
                   </td>
                 ))}
               </tr>
