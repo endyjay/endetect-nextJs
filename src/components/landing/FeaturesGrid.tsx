@@ -62,7 +62,7 @@ const features = [
 const FeaturesGrid = () => {
   return (
     <>
-      <section className="py-[60px] px-4 bg-white flex ">
+      <section className="py-[60px] px-4 bg-[#FBFBFB] flex ">
         <div className="container flex flex-col gap-[50px]">
           {" "}
           <div className="flex flex-col gap-5 text-center">
