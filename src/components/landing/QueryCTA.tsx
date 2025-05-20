@@ -8,8 +8,8 @@ const QueryCTA = () => {
         {/* Text Content */}
         <div className="flex flex-col gap-4 w-full lg:w-1/2">
           <div>
-            <h1 className="text-2xl sm:text-3xl md:text-[42px] mb-1.5 font-bold text-white leading-tight md:leading-[55px]">
-              Have Queries?å
+            <h1 className="text-2xl sm:text-3xl md:text-[42px] mb-1.5 font-bold text-white! leading-tight md:leading-[55px]">
+              Have Queries?
             </h1>
             <div className="w-[90px] sm:w-[133px] border border-[#24C16F] "></div>
           </div>
