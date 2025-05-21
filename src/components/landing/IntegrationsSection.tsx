@@ -8,21 +8,20 @@ const Slider = dynamic(() => import("react-slick"), {
 
 const providers = [
   {
-    src: "https://endetect.com/wp-content/uploads/2021/08/aws.svg",
+    src: "/images/aws.svg",
     alt: "AWS logo",
     name: "AWS",
   },
   {
-    src: "https://endetect.com/wp-content/uploads/2021/08/azure.svg",
+    src: "/images/azure.svg",
     alt: "Azure logo",
     name: "Azure",
   },
   {
-    src: "https://endetect.com/wp-content/uploads/2021/08/digital-ocean.svg",
+    src: "/images/digital-ocean.svg",
     alt: "Digital Ocean logo",
     name: "Digital Ocean",
   },
-  // Add more providers here if they were in the carousel
 ];
 const integrationLogos = [
   {

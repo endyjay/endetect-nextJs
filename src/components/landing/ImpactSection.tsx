@@ -79,7 +79,7 @@ const ImpactSection = () => {
           <div className="w-48 sm:w-60 md:w-72 mt-6 lg:mt-0">
             {/* Container for logo to control its size */}
             <Image
-              src="https://i0.wp.com/endetect.com/wp-content/uploads/2020/04/logo_new.png?resize=768%2C251&ssl=1"
+              src="/images/logo_new.webp"
               alt="EnDetect Logo"
               width={300}
               height={98}

@@ -66,7 +66,7 @@ const Footer = () => {
           <div className="flex flex-col gap-[20px] mb-8 lg:mb-0 w-full lg:w-auto">
             <Link href="/" className="inline-block">
               <Image
-                src="https://i0.wp.com/endetect.com/wp-content/uploads/2019/12/logo.png?resize=768%2C251&ssl=1"
+                src="/images/logo.webp"
                 alt="EnDetect Logo"
                 width={300}
                 height={98} // Approx ratio from 300x98
