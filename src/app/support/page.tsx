@@ -2,8 +2,8 @@ import React from 'react'
 
 const page = () => {
   return (
-    <section className="bg-[#F6F6F8] pt-[180px] h-full  py-[70px] px-4 sm:px-8 md:px-[190px] lg:px-[235px] ">
-      <div className="container flex flex-col items-center gap-5">
+    <section className="bg-[#F6F6F8]  h-full  py-[50px] px-4  ">
+      <div className="container flex flex-col items-center gap-[50px]">
         <div>
           <h3 className=" mb-1.5 text-center  font-bold  text-[#3A3A3A] leading-tight md:leading-[67px]">
           Contact us via following details for support

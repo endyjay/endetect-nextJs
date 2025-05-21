@@ -6,7 +6,7 @@ const Page = () => {
       <div className='container'>
         <div className='pb-[23px]'>
           <h1 className='text-center uppercase font-[600]!'>Privacy Policy</h1>
-          <span className='w-[100%] my-[15px] mx-auto block max-w-[145px] md:max-w-[235px] h-[1px] bg-black' />
+          <span className='w-[100%] my-[15px] mx-auto block max-w-[145px] md:max-w-[235px] h-[1px] bg-[#24C16F]' />
         </div>
         <div className="text-[14px] leading-[22px]">
           <p className='mb-[24px]' >We hold in high esteem the privacy of every Innocode's user. This Privacy Policy contains the details about the information Innocode will collect and how we will make use of the said information in terms of Information Technology Act 2000 and rules thereunder. Innocode wants you to make a note of when and how personal information is collected, used, disclosed and protected.</p>

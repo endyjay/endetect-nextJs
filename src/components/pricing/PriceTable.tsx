@@ -1,59 +1,8 @@
 "use client";
+import { featureList, plans } from "@/app/lib/plans";
 import Link from "next/link";
 import React, { useState, useRef, useEffect } from "react";
 
-const plans = [
-  {
-    key: "core",
-    name: "EnDetect CORE",
-    priceOld: "Rs.280",
-    price: "Rs.210/-",
-    period: "per employee/month",
-    billed: "(billed annually)",
-    offer: "*Limited Time Offer",
-    minUsers: "2 Employees",
-    features: [
-      true, // Time Sheet
-      true, // Idle Time Report
-      "every 10 - 45 minutes", // Active vs Idle Time Analysis
-      true, // Automatic Screenshots
-      true, // Software Usage Report
-      true, // Internet Bandwidth Usage
-    ],
-  },
-  {
-    key: "pro",
-    name: "EnDetect PRO",
-    priceOld: "Rs.280",
-    price: "Rs.210/-",
-    period: "per employee/month",
-    billed: "(billed annually)",
-    offer: "*Limited Time Offer",
-    minUsers: "5 Employees",
-    features: [true, true, "every 5 - 45 minutes", true, true, true],
-  },
-  {
-    key: "enterprise",
-    name: "EnDetect ENTERPRISE",
-    priceOld: "Rs.280",
-    price: "Rs.210/-",
-    period: "per employee/month",
-    billed: "(billed annually)",
-    offer: "*Limited Time Offer",
-    minUsers: "20 Employees",
-    features: [true, true, "every 1 - 45 minutes", true, true, true],
-  },
-];
-
-const featureList = [
-  "Minimum user purchase",
-  "Time Sheet",
-  "Idle Time Report",
-  "Active vs Idle Time Analysis",
-  "Automatic Screenshots",
-  "Software Usage Report",
-  "Internet Bandwidth Usage",
-];
 
 const PriceTable = () => {
   const [current, setCurrent] = useState(0);
@@ -136,226 +85,59 @@ const PriceTable = () => {
                 </tr>
               </thead>
               <tbody>
-                {/* Minimum user purchase */}
-                <tr className="border-t border-[#3D3D3C]">
-                  <td className="px-6 py-4 font-bold --font-montserrat text-[#000] bg-[#f5f5f6] border-r border-[#3D3D3C] text-[18px] leading-6 ">
-                    Minimum user purchase
-                  </td>
-                  {plans.map((plan, idx) => (
-                    <td
-                      key={plan.key}
-                      className={`px-6 py-4 text-[#222] leading-6 text-center text-[17px]  ${
-                        idx !== plans.length - 1
-                          ? "border-r border-[#3D3D3C]"
-                          : ""
-                      }`}
-                    >
-                      {plan.minUsers}
+                {featureList.map((feature, i) => (
+                  <tr key={feature} className="border-t border-[#3D3D3C]">
+                    <td className="px-6 py-4 font-bold --font-montserrat text-[#000] bg-[#f5f5f6] border-r border-[#3D3D3C] text-[18px] leading-6 ">
+                      {feature}
                     </td>
-                  ))}
-                </tr>
-                {/* Time Sheet */}
-                <tr className="border-t border-[#3D3D3C]">
-                  <td className="px-6 py-4 font-bold --font-montserrat text-[#000] bg-[#f5f5f6] border-r border-[#3D3D3C] text-[18px] leading-6 ">
-                    Time Sheet
-                  </td>
-                  {plans.map((plan, idx) => (
-                    <td
-                      key={plan.key}
-                      className={`px-6 py-4 text-center ${
-                        idx !== plans.length - 1
-                          ? "border-r border-[#3D3D3C]"
-                          : ""
-                      }`}
-                    >
-                      {plan.features[0] ? (
-                        <span className="inline-block text-[#24C16F] text-2xl">
-                          <svg
-                            width="16"
-                            height="12"
-                            viewBox="0 0 16 12"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M5.49997 8.58597L2.20697 5.29297L0.792969 6.70697L5.49997 11.414L15.207 1.70697L13.793 0.292969L5.49997 8.58597Z"
-                              fill="#24C16F"
-                            />
-                          </svg>
-                        </span>
-                      ) : null}
-                    </td>
-                  ))}
-                </tr>
-                {/* Idle Time Report */}
-                <tr className="border-t border-[#3D3D3C]">
-                  <td className="px-6 py-4 font-bold --font-montserrat text-[#000] bg-[#f5f5f6] border-r border-[#3D3D3C] text-[18px] leading-6 ">
-                    Idle Time Report
-                  </td>
-                  {plans.map((plan, idx) => (
-                    <td
-                      key={plan.key}
-                      className={`px-6 py-4 text-center ${
-                        idx !== plans.length - 1
-                          ? "border-r border-[#3D3D3C]"
-                          : ""
-                      }`}
-                    >
-                      {plan.features[1] ? (
-                        <span className="inline-block text-[#24C16F] text-2xl">
-                          <svg
-                            width="16"
-                            height="12"
-                            viewBox="0 0 16 12"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M5.49997 8.58597L2.20697 5.29297L0.792969 6.70697L5.49997 11.414L15.207 1.70697L13.793 0.292969L5.49997 8.58597Z"
-                              fill="#24C16F"
-                            />
-                          </svg>
-                        </span>
-                      ) : null}
-                    </td>
-                  ))}
-                </tr>
-                {/* Active vs Idle Time Analysis */}
-                <tr className="border-t border-[#3D3D3C]">
-                  <td className="px-6 py-4 font-bold --font-montserrat text-[#000] bg-[#f5f5f6] border-r border-[#3D3D3C] text-[18px] leading-6 ">
-                    Active vs Idle Time Analysis
-                  </td>
-                  {plans.map((plan, idx) => (
-                    <td
-                      key={plan.key}
-                      className={`px-6 py-4 text-center ${
-                        idx !== plans.length - 1
-                          ? "border-r border-[#3D3D3C]"
-                          : ""
-                      }`}
-                    >
-                      {typeof plan.features[2] === "string" ? (
-                        <span className="text-[#222] text-[18px] ">
-                          {plan.features[2]}
-                        </span>
-                      ) : plan.features[2] ? (
-                        <span className="inline-block text-[#24C16F] text-2xl">
-                          <svg
-                            width="16"
-                            height="12"
-                            viewBox="0 0 16 12"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M5.49997 8.58597L2.20697 5.29297L0.792969 6.70697L5.49997 11.414L15.207 1.70697L13.793 0.292969L5.49997 8.58597Z"
-                              fill="#24C16F"
-                            />
-                          </svg>
-                        </span>
-                      ) : null}
-                    </td>
-                  ))}
-                </tr>
-                {/* Automatic Screenshots */}
-                <tr className="border-t border-[#3D3D3C]">
-                  <td className="px-6 py-4 font-bold --font-montserrat text-[#000] bg-[#f5f5f6] border-r border-[#3D3D3C] text-[18px] leading-6 ">
-                    Automatic Screenshots
-                  </td>
-                  {plans.map((plan, idx) => (
-                    <td
-                      key={plan.key}
-                      className={`px-6 py-4 text-center ${
-                        idx !== plans.length - 1
-                          ? "border-r border-[#3D3D3C]"
-                          : ""
-                      }`}
-                    >
-                      {plan.features[3] ? (
-                        <span className="inline-block text-[#24C16F] text-2xl">
-                          <svg
-                            width="16"
-                            height="12"
-                            viewBox="0 0 16 12"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M5.49997 8.58597L2.20697 5.29297L0.792969 6.70697L5.49997 11.414L15.207 1.70697L13.793 0.292969L5.49997 8.58597Z"
-                              fill="#24C16F"
-                            />
-                          </svg>
-                        </span>
-                      ) : null}
-                    </td>
-                  ))}
-                </tr>
-                {/* Software Usage Report */}
-                <tr className="border-t border-[#3D3D3C]">
-                  <td className="px-6 py-4 font-bold --font-montserrat text-[#000] bg-[#f5f5f6] border-r border-[#3D3D3C] text-[18px] leading-6 ">
-                    Software Usage Report
-                  </td>
-                  {plans.map((plan, idx) => (
-                    <td
-                      key={plan.key}
-                      className={`px-6 py-4 text-center ${
-                        idx !== plans.length - 1
-                          ? "border-r border-[#3D3D3C]"
-                          : ""
-                      }`}
-                    >
-                      {plan.features[4] ? (
-                        <span className="inline-block text-[#24C16F] text-2xl">
-                          <svg
-                            width="16"
-                            height="12"
-                            viewBox="0 0 16 12"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M5.49997 8.58597L2.20697 5.29297L0.792969 6.70697L5.49997 11.414L15.207 1.70697L13.793 0.292969L5.49997 8.58597Z"
-                              fill="#24C16F"
-                            />
-                          </svg>
-                        </span>
-                      ) : null}
-                    </td>
-                  ))}
-                </tr>
-                {/* Internet Bandwidth Usage */}
-                <tr className="border-t border-[#3D3D3C]">
-                  <td className="px-6 py-4 font-bold --font-montserrat text-[#000] bg-[#f5f5f6] border-r border-[#3D3D3C] text-[18px] leading-6 ">
-                    Internet Bandwidth Usage
-                  </td>
-                  {plans.map((plan, idx) => (
-                    <td
-                      key={plan.key}
-                      className={`px-6 py-4 text-center ${
-                        idx !== plans.length - 1
-                          ? "border-r border-[#3D3D3C]"
-                          : ""
-                      }`}
-                    >
-                      {plan.features[5] ? (
-                        <span className="inline-block text-[#24C16F] text-2xl">
-                          <svg
-                            width="16"
-                            height="12"
-                            viewBox="0 0 16 12"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M5.49997 8.58597L2.20697 5.29297L0.792969 6.70697L5.49997 11.414L15.207 1.70697L13.793 0.292969L5.49997 8.58597Z"
-                              fill="#24C16F"
-                            />
-                          </svg>
-                        </span>
-                      ) : null}
-                    </td>
-                  ))}
-                </tr>
+                    {plans.map((plan, idx) => (
+                      <td
+                        key={plan.key}
+                        className={`px-6 py-4 text-center ${
+                          idx !== plans.length - 1
+                            ? "border-r border-[#3D3D3C]"
+                            : ""
+                        }`}
+                      >
+                        {typeof plan.features[i] === "string" ? (
+                          <span className="text-[#222]">
+                            {plan.features[i]}
+                          </span>
+                        ) : plan.features[i] ? (
+                          <span className="inline-block text-[#24C16F] text-2xl align-middle">
+                            <svg
+                              width="16"
+                              height="12"
+                              viewBox="0 0 16 12"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M5.49997 8.58597L2.20697 5.29297L0.792969 6.70697L5.49997 11.414L15.207 1.70697L13.793 0.292969L5.49997 8.58597Z"
+                                fill="#24C16F"
+                              />
+                            </svg>
+                          </span>
+                        ) : (
+                          <span className="inline-block text-[#24C16F] text-2xl align-middle">
+                            <svg
+                              width="12"
+                              height="12"
+                              viewBox="0 0 12 12"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M6.00016 4.93934L10.2428 0.696701L11.3035 1.75736L7.06083 6L11.3035 10.2426L10.2428 11.3033L6.00016 7.06066L1.75752 11.3033L0.696854 10.2426L4.93949 6L0.696854 1.75736L1.75752 0.696701L6.00016 4.93934Z"
+                                fill="#FF4D4F"
+                              />
+                            </svg>
+                          </span>
+                        )}
+                      </td>
+                    ))}
+                  </tr>
+                ))}
               </tbody>
               <tfoot>
                 <tr className="border-t bg-[#f5f5f6] border-[#3D3D3C]">
@@ -389,8 +171,8 @@ const PriceTable = () => {
             className="border bg-white overflow-x-auto  scroll-smooth"
           >
             <table className="h-full">
-              <thead className="h-full bg-amber-200">
-                <tr className="h-full bg-amber-600">
+              <thead className="h-full ">
+                <tr className="h-full ">
                   <th className="bg-[#24C16F] border border-b-0 flex h-full w-full text-2xl text-[#222] font-bold flex-col px-4 py-4 text-left "></th>
                   <th className="bg-[#130826]  text-white font-bold px-4 py-4 text-center w-1/2  border-[#3D3D3C]">
                     {plans[current].name}
@@ -422,164 +204,50 @@ const PriceTable = () => {
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td className="px-4 py-3 text-[15px] font-semibold --font-montserrat text-[#000] bg-[#f5f5f6] text-left border border-[#3D3D3C]">
-                    Minimum user purchase
-                  </td>
-                  <td className="px-4 py-3 text-center border border-[#3D3D3C]">
-                    {typeof plans[current].minUsers === "string" ? (
-                      <span className="leading-[22px] text-[#000] font-[400] text-[15px] ">
-                        {plans[current].minUsers}
-                      </span>
-                    ) : plans[current].minUsers ? (
-                      <span className="inline-block text-[#24C16F] text-2xl">
-                        {plans[current].minUsers}
-                      </span>
-                    ) : null}
-                  </td>
-                </tr>
-                <tr className="border-t border-[#3D3D3C]">
-                  <td className="px-4 py-3 text-[15px] font-semibold  text-[#000] bg-[#f5f5f6] text-left border border-[#3D3D3C]">
-                    Time Sheet
-                  </td>
-                  <td className="px-4 py-3 text-center border border-[#3D3D3C]">
-                    {plans[current].features[0] ? (
-                      <span className="inline-block text-[#24C16F] text-2xl">
-                        <svg
-                          width="16"
-                          height="12"
-                          viewBox="0 0 16 12"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M5.49997 8.58597L2.20697 5.29297L0.792969 6.70697L5.49997 11.414L15.207 1.70697L13.793 0.292969L5.49997 8.58597Z"
-                            fill="#24C16F"
-                          />
-                        </svg>
-                      </span>
-                    ) : null}
-                  </td>
-                </tr>
-                <tr className="border-t border-[#3D3D3C]">
-                  <td className="px-4 py-3 text-[15px] font-semibold  text-[#000] bg-[#f5f5f6] text-left border border-[#3D3D3C]">
-                    Idle Time Report
-                  </td>
-                  <td className="px-4 py-3 text-center border border-[#3D3D3C]">
-                    {plans[current].features[1] ? (
-                      <span className="inline-block text-[#24C16F] text-2xl">
-                        <svg
-                          width="16"
-                          height="12"
-                          viewBox="0 0 16 12"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M5.49997 8.58597L2.20697 5.29297L0.792969 6.70697L5.49997 11.414L15.207 1.70697L13.793 0.292969L5.49997 8.58597Z"
-                            fill="#24C16F"
-                          />
-                        </svg>
-                      </span>
-                    ) : null}
-                  </td>
-                </tr>
-                <tr className="border-t border-[#3D3D3C]">
-                  <td className="px-4 py-3 text-[15px] font-semibold  text-[#000] bg-[#f5f5f6] text-left border border-[#3D3D3C]">
-                    Active vs Idle Time Analysis
-                  </td>
-                  <td className="px-4 py-3 text-center border border-[#3D3D3C]">
-                    {typeof plans[current].features[2] === "string" ? (
-                      <span className="leading-[22px] text-[#000] font-[400] text-[15px] ">
-                        {plans[current].features[2]}
-                      </span>
-                    ) : plans[current].features[2] ? (
-                      <span className="inline-block text-[#24C16F] text-2xl">
-                        <svg
-                          width="16"
-                          height="12"
-                          viewBox="0 0 16 12"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M5.49997 8.58597L2.20697 5.29297L0.792969 6.70697L5.49997 11.414L15.207 1.70697L13.793 0.292969L5.49997 8.58597Z"
-                            fill="#24C16F"
-                          />
-                        </svg>
-                      </span>
-                    ) : null}
-                  </td>
-                </tr>
-                <tr className="border-t border-[#3D3D3C]">
-                  <td className="px-4 py-3 text-[15px] font-semibold  text-[#000] bg-[#f5f5f6] text-left border border-[#3D3D3C]">
-                    Automatic Screenshots
-                  </td>
-                  <td className="px-4 py-3 text-center border border-[#3D3D3C]">
-                    {plans[current].features[3] ? (
-                      <span className="inline-block text-[#24C16F] text-2xl">
-                        <svg
-                          width="16"
-                          height="12"
-                          viewBox="0 0 16 12"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M5.49997 8.58597L2.20697 5.29297L0.792969 6.70697L5.49997 11.414L15.207 1.70697L13.793 0.292969L5.49997 8.58597Z"
-                            fill="#24C16F"
-                          />
-                        </svg>
-                      </span>
-                    ) : null}
-                  </td>
-                </tr>
-                <tr className="border-t border-[#3D3D3C]">
-                  <td className="px-4 py-3 text-[15px] font-semibold  text-[#000] bg-[#f5f5f6] text-left border border-[#3D3D3C]">
-                    Software Usage Report
-                  </td>
-                  <td className="px-4 py-3 text-center border border-[#3D3D3C]">
-                    {plans[current].features[4] ? (
-                      <span className="inline-block text-[#24C16F] text-2xl">
-                        <svg
-                          width="16"
-                          height="12"
-                          viewBox="0 0 16 12"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M5.49997 8.58597L2.20697 5.29297L0.792969 6.70697L5.49997 11.414L15.207 1.70697L13.793 0.292969L5.49997 8.58597Z"
-                            fill="#24C16F"
-                          />
-                        </svg>
-                      </span>
-                    ) : null}
-                  </td>
-                </tr>
-                <tr className="border-t border-[#3D3D3C]">
-                  <td className="px-4 py-3 text-[15px] font-semibold  text-[#000] bg-[#f5f5f6] text-left border border-[#3D3D3C]">
-                    Internet Bandwidth Usage
-                  </td>
-                  <td className="px-4 py-3 text-center border border-[#3D3D3C]">
-                    {plans[current].features[5] ? (
-                      <span className="inline-block text-[#24C16F] text-2xl">
-                        <svg
-                          width="16"
-                          height="12"
-                          viewBox="0 0 16 12"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M5.49997 8.58597L2.20697 5.29297L0.792969 6.70697L5.49997 11.414L15.207 1.70697L13.793 0.292969L5.49997 8.58597Z"
-                            fill="#24C16F"
-                          />
-                        </svg>
-                      </span>
-                    ) : null}
-                  </td>
-                </tr>
+                {featureList.map((feature, i) => (
+                  <tr key={feature} className="border-t border-[#3D3D3C]">
+                    <td className="px-4 py-3 text-[15px] font-semibold  text-[#000] bg-[#f5f5f6] text-left border border-[#3D3D3C]">
+                      {feature}
+                    </td>
+                    <td className="px-4 py-3 text-center border border-[#3D3D3C]">
+                      {typeof plans[current].features[i] === "string" ? (
+                        <span className="text-[#222]">
+                          {plans[current].features[i]}
+                        </span>
+                      ) : plans[current].features[i] ? (
+                        <span className="inline-block text-[#24C16F] text-2xl align-middle">
+                          <svg
+                            width="16"
+                            height="12"
+                            viewBox="0 0 16 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M5.49997 8.58597L2.20697 5.29297L0.792969 6.70697L5.49997 11.414L15.207 1.70697L13.793 0.292969L5.49997 8.58597Z"
+                              fill="#24C16F"
+                            />
+                          </svg>
+                        </span>
+                      ) : (
+                        <span className="inline-block text-[#24C16F] text-2xl align-middle">
+                          <svg
+                            width="12"
+                            height="12"
+                            viewBox="0 0 12 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M6.00016 4.93934L10.2428 0.696701L11.3035 1.75736L7.06083 6L11.3035 10.2426L10.2428 11.3033L6.00016 7.06066L1.75752 11.3033L0.696854 10.2426L4.93949 6L0.696854 1.75736L1.75752 0.696701L6.00016 4.93934Z"
+                              fill="#FF4D4F"
+                            />
+                          </svg>
+                        </span>
+                      )}
+                    </td>
+                  </tr>
+                ))}
               </tbody>
               <tfoot>
                 <tr>

@@ -7,7 +7,7 @@ const Page = () => {
                 <div className='pb-[23px]'>
                     <h1 className='text-center uppercase font-[600]!'>Software License Agreement
                     </h1>
-                    <span className='w-[100%] my-[15px] mx-auto block max-w-[145px] md:max-w-[235px] h-[1px] bg-black' />
+                    <span className='w-[100%] my-[15px] mx-auto block max-w-[145px] md:max-w-[235px] h-[1px] bg-[#24C16F]' />
                 </div>
                 <div className="text-[14px] leading-[22px]">
                     <p className='mb-[24px]' >TERMS APPLICABLE TO YOUR USE OF THE SOFTWARE<br />

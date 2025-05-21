@@ -12,11 +12,11 @@ const AddressesItem: React.FC<addressesDataProps> = ({
   description,
 }) => {
   return (
-    <div className="flex flex-col min-h-[320px] max-h-[320px] max-w-[360px] justify-center items-center text-center px-4 gap-[20px] py-8 sm:py-[32px] bg-[#333333] text-white">
+    <div className="flex flex-col min-h-[320px]  md:max-w-[360px] mx-auto justify-center items-center text-center px-4 py-[30px] md:py-[32px] bg-[#333333] text-white">
       <div className="mb-4">
         <i className={`${iconClass} text-[90px] text-[#24C16F]`}></i>
       </div>
-      <h6 className="text-base sm:text-lg leading-6 font-bold">{title}</h6>
+      <h5 className="text-[#FFFFFF]! mb-[10px]">{title}</h5>
       <p
         dangerouslySetInnerHTML={{ __html: description }}
         className="text-sm  sm:text-[15px] leading-[23px] font-[400]"
@@ -50,7 +50,7 @@ const addressesData: addressesDataProps[] = [
 
 const Addresses = () => {
   return (
-    <section className="px-4 sm:px-8 md:px-[80px] pt-[150px] py-[60px] bg-[#F6F6F8]">
+    <section className="  md:py-[60px] py-[40px] bg-[#F6F6F8]">
       <div className="flex flex-col gap-[50px] container ">
         <div className="flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-0">
           <div className="w-full lg:w-auto">
@@ -64,7 +64,7 @@ const Addresses = () => {
               href="https://calendly.com/endetect"
               target="_blank"
               rel="noopener noreferrer"
-              className="ast-custom-button text-white bg-[#24C16F]  hover:bg-[#189c56] text-[16px] sm:text-[18px] font-[500]  px-[20px] sm:px-[30px] py-[12px] sm:py-[12px] transition-colors duration-300"
+              className="ast-custom-button block text-white bg-[#24C16F]  hover:bg-[#189c56] text-[16px] sm:text-[18px] font-[500]  px-[20px] sm:px-[30px] py-[12px] sm:py-[12px] transition-colors duration-300"
             >
               Schedule a Demo
             </a>
