@@ -11,7 +11,7 @@ const Header = () => {
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/about-us", label: "About Us" },
-    { href: "/features", label: "Features" },
+    { href: "/best-pc-monitoring-software", label: "Features" },
     { href: "/pricing", label: "Pricing" },
     { href: "/contact", label: "Contact" },
     { href: "/support", label: "Support" },
