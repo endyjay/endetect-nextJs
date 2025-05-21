@@ -1,5 +1,5 @@
 import React from 'react'
-import ProductsList from './components/ProductsList'
+import ProductsList from '../../components/products/ProductsList'
 import { FaCameraRetro } from "react-icons/fa";
 import { FaCompactDisc } from "react-icons/fa";
 import { FaWifi } from "react-icons/fa";

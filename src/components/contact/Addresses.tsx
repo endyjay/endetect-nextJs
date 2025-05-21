@@ -12,7 +12,7 @@ const AddressesItem: React.FC<addressesDataProps> = ({
   description,
 }) => {
   return (
-    <div className="flex flex-col min-h-[320px]  md:max-w-[360px] mx-auto justify-center items-center text-center px-4 py-[30px] md:py-[32px] bg-[#333333] text-white">
+    <div className="flex flex-col min-h-[320px]  md:max-w-[360px] mx-auto justify-center items-center text-center py-[30px] md:py-[32px] bg-[#333333] text-white">
       <div className="mb-4">
         <i className={`${iconClass} text-[90px] text-[#24C16F]`}></i>
       </div>
@@ -50,7 +50,7 @@ const addressesData: addressesDataProps[] = [
 
 const Addresses = () => {
   return (
-    <section className="  md:py-[60px] py-[40px] bg-[#F6F6F8]">
+    <section className="px-4 sm:px-8 md:px-[80px]  py-[60px] bg-[#F6F6F8]">
       <div className="flex flex-col gap-[50px] container ">
         <div className="flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-0">
           <div className="w-full lg:w-auto">
@@ -71,7 +71,7 @@ const Addresses = () => {
           </div>
         </div>
 
-        <div className="flex flex-col  sm:flex-row gap-4 sm:gap-[20px]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-[20px]">
           {addressesData.map((item, index) => (
             <div key={index} className="flex-1">
               <AddressesItem

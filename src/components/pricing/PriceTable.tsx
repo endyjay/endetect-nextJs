@@ -54,7 +54,7 @@ const PriceTable = () => {
                           : ""
                       }`}
                     >
-                      <div className="font-bold text-[19px] sm:text-[16px] leading-6 font-['Sofia_Pro'] bg-[#130826] px-6 py-4 text-lg mb-2">
+                      <div className="font-bold text-[19px] sm:text-[16px] leading-6 font-['Sofia_Pro'] bg-[#130826] text-white px-6 py-4 text-lg mb-2">
                         {plan.name}
                       </div>
                       <div className="flex flex-col gap-4">
@@ -168,18 +168,18 @@ const PriceTable = () => {
         <div className="w-full px-4 md:hidden">
           <div
             ref={tableRef}
-            className="border bg-white overflow-x-auto  scroll-smooth"
+            className=" overflow-x-auto  scroll-smooth"
           >
             <table className="h-full">
               <thead className="h-full ">
                 <tr className="h-full ">
                   <th className="bg-[#24C16F] border border-b-0 flex h-full w-full text-2xl text-[#222] font-bold flex-col px-4 py-4 text-left "></th>
-                  <th className="bg-[#130826]  text-white font-bold px-4 py-4 text-center w-1/2  border-[#3D3D3C]">
+                  <th className="bg-[#130826]  text-white! font-bold px-4 py-4 text-center w-1/2  border-[#3D3D3C]">
                     {plans[current].name}
                   </th>
                 </tr>
                 <tr>
-                  <td className="bg-[#24C16F] border-l flex h-full w-full text-2xl text-[#222] font-bold flex-col px-4 py-4 text-left  ">
+                  <td className="bg-[#24C16F] border-l border-t-0 flex h-full w-full text-2xl text-[#222] font-bold flex-col px-4 py-4 text-left  ">
                     Features
                   </td>
                   <td className="bg-[#F0F0F2] px-4 py-2 text-center border border-[#3D3D3C]">
