@@ -52,7 +52,7 @@ const Header = () => {
   }, [mobileMenuOpen]);
 
   return (
-    <div className="min-h-[124px]">
+    <div className="min-h-[85px]">
       <header
         className={`fixed top-0 left-0 w-full z-50 transition-transform duration-300 bg-white shadow-lg ${
           showHeader ? "translate-y-0" : "-translate-y-full"
@@ -61,14 +61,14 @@ const Header = () => {
       >
         {/* Above Header Section */}
         <div className="ast-above-header-wrap  bg-gray-50 border-b border-gray-200">
-          <div className="py-2 text-center bg-[#24C16F] w-full text-white font-[500]">
+          {/* <div className="py-2 text-center bg-[#24C16F] w-full text-white font-[500]">
             <p className="text-[14px] underline leading-[150%] ">
               <span className="">Call for Demo +91 </span>
               <a href="tel:+919711286969" className=" ">
                 9711 28 6969
               </a>
             </p>
-          </div>
+          </div> */}
 
           {/* Main Header Section */}
           <div className=" py-[16px] px-4   bg-white">
@@ -119,7 +119,7 @@ const Header = () => {
                       Schedule a Demo
                     </a>
                   </div>
-                  <div className="ast-header-button-2">
+                  {/* <div className="ast-header-button-2">
                     <a
                       href="https://app.endetect.com/login.php"
                       target="_blank"
@@ -128,7 +128,7 @@ const Header = () => {
                     >
                       Login
                     </a>
-                  </div>
+                  </div> */}
                 </div>
               </div>
 

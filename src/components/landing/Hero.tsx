@@ -45,10 +45,10 @@ const Hero = () => {
             </div>
           </div>
           <Link
-            href="/best-pc-monitoring-software" // Assuming best-pc-monitoring-software/index.html maps to /features
+            href="https://in.bigin.online/org60041256722/bookings/demo" // Assuming best-pc-monitoring-software/index.html maps to /features
             className="text-nowrap flex bg-[#24C16F] items-center justify-center hover:bg-[#169050] text-white text-base md:text-lg py-3 px-5 font-[500] duration-300 "
           >
-            Know More{" "}
+            Schedule a Demo{" "}
             <span>
               <ArrowRight className="ml-2 h-5 w-5" />
             </span>
