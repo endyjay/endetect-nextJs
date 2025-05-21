@@ -3,27 +3,27 @@ import Image from "next/image";
 
 const allImages = [
   {
-    src: "https://endetect.com/wp-content/uploads/2021/08/Screenshot-1061.png",
+    src: "/images/Screenshot-1061.webp",
     alt: "EnDetect Cloud Panel Screenshot 1",
     originalName: "Screenshot (1061)", // from image title/alt in HTML
   },
   {
-    src: "https://endetect.com/wp-content/uploads/2021/08/Screenshot-1063.png",
+    src: "/images/Screenshot-1063.webp",
     alt: "EnDetect Cloud Panel Screenshot 2",
     originalName: "Screenshot (1063)",
   },
   {
-    src: "https://endetect.com/wp-content/uploads/2021/08/Screenshot-1065-1.png",
+    src: "/images/Screenshot-1065-1.webp",
     alt: "EnDetect Cloud Panel Screenshot 3",
     originalName: "Screenshot (1065)",
   },
   {
-    src: "https://endetect.com/wp-content/uploads/2021/08/Screenshot-1068.png",
+    src: "/images/Screenshot-1068.webp",
     alt: "EnDetect Cloud Panel Screenshot 4",
     originalName: "Screenshot (1068)",
   },
   {
-    src: "https://endetect.com/wp-content/uploads/2021/08/endetect-software.png",
+    src: "/images/endetect-software.webp",
     alt: "EnDetect Software Interface Screenshot",
     originalName: "endetect-software",
   },
@@ -31,17 +31,17 @@ const allImages = [
 
 const screenshotImages = [
   {
-    src: "https://endetect.com/wp-content/uploads/2021/08/Screenshot-1061.png",
+    src: "/images/Screenshot-1061.webp",
     alt: "EnDetect Cloud Panel Screenshot 1",
     originalName: "Screenshot (1061)", // from image title/alt in HTML
   },
   {
-    src: "https://endetect.com/wp-content/uploads/2021/08/Screenshot-1063.png",
+    src: "/images/Screenshot-1063.webp",
     alt: "EnDetect Cloud Panel Screenshot 2",
     originalName: "Screenshot (1063)",
   },
   {
-    src: "https://endetect.com/wp-content/uploads/2021/08/Screenshot-1065-1.png",
+    src: "/images/Screenshot-1065-1.webp",
     alt: "EnDetect Cloud Panel Screenshot 3",
     originalName: "Screenshot (1065)",
   }
@@ -49,12 +49,12 @@ const screenshotImages = [
 
 const lastTwoImages = [
   {
-    src: "https://endetect.com/wp-content/uploads/2021/08/Screenshot-1068.png",
+    src: "/images/Screenshot-1068.webp",
     alt: "EnDetect Cloud Panel Screenshot 4",
     originalName: "Screenshot (1068)",
   },
   {
-    src: "https://endetect.com/wp-content/uploads/2021/08/endetect-software.png",
+    src: "/images/endetect-software.webp",
     alt: "EnDetect Software Interface Screenshot",
     originalName: "endetect-software",
   },
