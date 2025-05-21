@@ -66,7 +66,7 @@ const MonitorViewTrace = () => {
               <div className="flex justify-center lg:justify-start">
                 <Link
                   href="/contact" // Original link: contact/index.html
-                  className="text-[15px] sm:text-[16px]  md:-ml-2 text-white font-semibold bg-green-500 py-3 px-5 hover:bg-[#169050] flex items-center justify-center text-lg w-fit duration-300 "
+                  className="text-[15px] sm:text-[16px]  md:-ml-2 text-white font-semibold bg-[#25C16F] py-3 px-5 hover:opacity-80 flex items-center justify-center text-lg w-fit duration-300 "
                 >
                   Start Monitoring Now
                   <span>
