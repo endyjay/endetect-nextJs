@@ -2,11 +2,13 @@
 import Link from "next/link";
 import Image from "next/image"; // Will be used for the logo
 import React, { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
   const [showHeader, setShowHeader] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   const navLinks = [
     { href: "/", label: "Home" },
@@ -95,7 +97,9 @@ const Header = () => {
                     {navLinks.map((link) => (
                       <li
                         key={link.href}
-                        className="menu-item hover:text-[#24C16F] hover:underline hover:font-[700]"
+                        className={`menu-item hover:text-[#24C16F] hover:underline hover:font-[700] ${
+                          pathname === link.href ? "text-[#24C16F]  font-[700]" : ""
+                        }`}
                       >
                         <Link
                           href={link.href}
@@ -166,7 +170,9 @@ const Header = () => {
                     <li key={link.href} className="menu-item">
                       <Link
                         href={link.href}
-                        className="block text-[#3A3A3A] text-lg font-medium py-2 hover:text-[#24C16F] hover:underline"
+                        className={`block text-lg font-medium py-2 hover:text-[#24C16F] hover:underline ${
+                          pathname === link.href ? "text-[#24C16F] font-[700]" : "text-[#3A3A3A]"
+                        }`}
                         onClick={() => setMobileMenuOpen(false)}
                       >
                         {link.label}

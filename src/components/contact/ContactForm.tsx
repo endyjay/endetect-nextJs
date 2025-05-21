@@ -13,9 +13,6 @@ const ContactForm = () => {
           style={{ border: 'none' }}
           title="Embedded HTML"
       />
-      
-
-   
     </div>
   );
 };
