@@ -1,4 +1,11 @@
+"use client";
 import Image from "next/image";
+import dynamic from "next/dynamic";
+
+const Slider = dynamic(() => import("react-slick"), {
+  ssr: false,
+});
+
 const providers = [
   {
     src: "https://endetect.com/wp-content/uploads/2021/08/aws.svg",
@@ -41,8 +48,27 @@ const integrationLogos = [
 ];
 
 const IntegrationsSection = () => {
+  const sliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   return (
-    <section className="py-[60px] px-4 sm:px-8 md:px-20  bg-white">
+    <section className="py-[60px] px-4 sm:px-8 md:px-20 bg-white">
       <div className="container flex flex-col gap-[60px]">
         <div className="flex flex-col gap-5">
           <div>
@@ -52,18 +78,35 @@ const IntegrationsSection = () => {
             <div className="w-[90px] sm:w-[133px] border border-[#24C16F] mx-auto"></div>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-4 sm:gap-[20px] items-center">
+          {/* Mobile and Tablet Slider */}
+          <div className="lg:hidden px-4">
+            <Slider {...sliderSettings}>
+              {integrationLogos.map((logo, index) => (
+                <div key={index} className="px-2">
+                  <div className="flex justify-center items-center h-[60px]">
+                    <Image
+                      src={logo.src}
+                      alt={logo.alt}
+                      width={150}
+                      height={60}
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+              ))}
+            </Slider>
+          </div>
+
+          {/* Desktop Grid */}
+          <div className="hidden lg:flex flex-wrap justify-center gap-4 sm:gap-[20px] items-center">
             {integrationLogos.map((logo, index) => (
-              <div
-                key={index}
-                className="flex   justify-center items-center"
-              >
+              <div key={index} className="flex justify-center items-center">
                 <Image
                   src={logo.src}
                   alt={logo.alt}
                   width={150}
                   height={60}
-                  objectFit="contain"
+                  className="object-contain"
                 />
               </div>
             ))}
@@ -77,18 +120,38 @@ const IntegrationsSection = () => {
             <div className="w-[90px] sm:w-[133px] border border-[#24C16F] mx-auto"></div>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-4 sm:gap-[20px] items-center">
+          {/* Mobile and Tablet Slider */}
+          <div className="lg:hidden px-4">
+            <Slider {...sliderSettings}>
+              {providers.map((provider) => (
+                <div key={provider.name} className="px-2">
+                  <div className="flex justify-center items-center h-[60px]">
+                    <Image
+                      src={provider.src}
+                      alt={provider.alt}
+                      width={150}
+                      height={60}
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+              ))}
+            </Slider>
+          </div>
+
+          {/* Desktop Grid */}
+          <div className="hidden lg:flex flex-wrap justify-center gap-4 sm:gap-[20px] items-center">
             {providers.map((provider) => (
               <div
                 key={provider.name}
-                className="flex justify-center    items-center"
+                className="flex justify-center items-center"
               >
                 <Image
                   src={provider.src}
                   alt={provider.alt}
                   width={150}
                   height={60}
-                  objectFit="contain"
+                  className="object-contain"
                 />
               </div>
             ))}
