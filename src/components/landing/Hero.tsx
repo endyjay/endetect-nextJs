@@ -7,15 +7,15 @@ const Hero = () => {
       {/* Background image container */}
       <div className="absolute inset-0 w-full h-full">
         {/* Background image */}
-        <div 
+        <div
           className="absolute inset-0 bg-[url('/images/hero-image.png')] bg-cover bg-center bg-no-repeat bg-fixed"
-          style={{ transform: 'translateZ(0)' }}
+          style={{ transform: "translateZ(0)" }}
           aria-hidden="true"
         />
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/70" aria-hidden="true" />
       </div>
-      
+
       <div className="relative max-w-[785px] mx-auto flex justify-center items-center py-[70px] md:py-[102px] w-full z-10">
         <div className="px-2 md:px-2 items-center flex flex-col gap-5 md:gap-6 text-white w-full">
           <h1 className=" text-white! text-center">
@@ -45,7 +45,7 @@ const Hero = () => {
             </div>
           </div>
           <Link
-            href="/features" // Assuming best-pc-monitoring-software/index.html maps to /features
+            href="/best-pc-monitoring-software" // Assuming best-pc-monitoring-software/index.html maps to /features
             className="text-nowrap flex bg-[#24C16F] items-center justify-center hover:bg-[#169050] text-white text-base md:text-lg py-3 px-5 font-[500] duration-300 "
           >
             Know More{" "}
