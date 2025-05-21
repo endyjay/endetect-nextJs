@@ -50,7 +50,7 @@ const addressesData: addressesDataProps[] = [
 
 const Addresses = () => {
   return (
-    <section className="px-4 sm:px-8 md:px-[80px] pt-[180px] py-[60px] bg-[#F6F6F8]">
+    <section className="px-4 sm:px-8 md:px-[80px] pt-[150px] py-[60px] bg-[#F6F6F8]">
       <div className="flex flex-col gap-[50px] container ">
         <div className="flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-0">
           <div className="w-full lg:w-auto">

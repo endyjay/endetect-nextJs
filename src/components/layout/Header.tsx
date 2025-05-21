@@ -52,7 +52,8 @@ const Header = () => {
   }, [mobileMenuOpen]);
 
   return (
-    <header
+   <div className="min-h-[124px]">
+     <header
       className={`fixed top-0 left-0 w-full z-50 transition-transform duration-300 bg-white shadow-lg ${
         showHeader ? "translate-y-0" : "-translate-y-full"
       }`}
@@ -197,6 +198,7 @@ font-['Sofia_Pro']"
       {/* TODO: Mobile Header (#ast-mobile-header) */}
       {/* TODO: Sticky Header (#ast-fixed-header) - though this might be controlled by scroll listeners and conditional classes on the main header */}
     </header>
+   </div>
   );
 };
 
