@@ -138,17 +138,21 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="py-8 h-full box-border overflow-auto bg-[#EAEEF2] bg-no-repeat bg-[length:100%_100%]">
-      <div className="w-full max-w-[700px] rounded-[10px] mx-auto border-none bg-white text-[#222] shadow-[0px_0px_2px_0_#00000033]">
+    <div className="md:py-[60px] py-[40px] px-4 h-full box-border overflow-auto bg-[#FFF] bg-no-repeat bg-[length:100%_100%]">
+      <div className="w-full max-w-[700px] mx-auto ">
+        <div>
+          <h2 className="text-center">Contact Us</h2>
+          <span className='w-[100%] my-[6px] mx-auto block max-w-[120px] md:max-w-[133px] h-[1px] bg-[#24C16F]' />
+        </div>
+        <div className="rounded-[2px] mx-auto mt-[50px] border-[#E2E8F0] bg-white text-[#222] shadow-[0px_0px_2px_0_#00000033]">
         <form 
-          className="p-[30px_40px_60px] font-['Arial'] relative text-[15px]" 
+          className="md:px-[50px] md:py-[50px] px-[24px] py-[30px] font-['Arial'] relative text-[15px]" 
           data-ux-form-alignment="top" 
           onSubmit={handleSubmit}
         >
-          <div className="text-[22px] pb-[35px] font-bold break-words">Contact Us</div>
           <div>
             <div className="mb-5">
-              <div className="py-[7px] break-words">Name</div>
+              <div className="pb-[10px] text-[17px] md:text-[20px] text-[#3A3A3A] break-words">Name*</div>
               <div className={`relative text-left break-words border-0 ${errors["Last Name"] ? "animate-shake" : ""}`}>
                 <div className="relative flex flex-1">
                   <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-[#ff6a6a] rounded-l-[4px] z-[2]"></div>
@@ -156,6 +160,7 @@ const ContactForm = () => {
                     name="Last Name"
                     maxLength={80}
                     type="text"
+                    placeholder="John Doe"
                     value={formData["Last Name"]}
                     onChange={handleChange}
                     className={`w-full border border-[#BDC8D3] rounded-[4px] p-[10px_15px] min-h-[38px] text-[15px] font-inherit appearance-none focus:border-[#1AB16D] focus:outline-none ${
@@ -172,7 +177,7 @@ const ContactForm = () => {
             </div>
 
             <div className="mb-5">
-              <div className="py-[7px] break-words">Mobile</div>
+              <div className="pb-[10px] break-words text-[17px] md:text-[20px] text-[#3A3A3A]">Mobile*</div>
               <div className={`relative text-left break-words border-0 ${errors.Mobile ? "animate-shake" : ""}`}>
                 <div className="relative flex flex-1">
                   <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-[#ff6a6a] rounded-l-[4px] z-[2]"></div>
@@ -180,6 +185,7 @@ const ContactForm = () => {
                     name="Mobile"
                     maxLength={30}
                     type="text"
+                    placeholder="(123) 456 - 7890"
                     value={formData.Mobile}
                     onChange={handleChange}
                     className={`w-full border border-[#BDC8D3] rounded-[4px] p-[10px_15px] min-h-[38px] text-[15px] font-inherit appearance-none focus:border-[#1AB16D] focus:outline-none ${
@@ -196,13 +202,14 @@ const ContactForm = () => {
             </div>
 
             <div className="mb-5">
-              <div className="py-[7px] break-words">Email</div>
+              <div className="pb-[10px] break-words text-[17px] md:text-[20px] text-[#3A3A3A]">Email*</div>
               <div className={`relative text-left break-words border-0 ${errors.Email ? "animate-shake" : ""}`}>
                 <div className="relative flex flex-1">
                   <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-[#ff6a6a] rounded-l-[4px] z-[2]"></div>
                   <input
                     name="Email"
                     maxLength={100}
+                    placeholder="example@mail.com"
                     type="text"
                     value={formData.Email}
                     onChange={handleChange}
@@ -220,12 +227,13 @@ const ContactForm = () => {
             </div>
 
             <div className="mb-5">
-              <div className="py-[7px] break-words">Description</div>
+              <div className="pb-[10px] break-words text-[17px] md:text-[20px] text-[#3A3A3A]">Description*</div>
               <div className={`relative text-left break-words border-0 ${errors.Description ? "animate-shake" : ""}`}>
                 <div className="relative flex flex-1">
                   <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-[#ff6a6a] rounded-l-[4px] z-[2]"></div>
                   <textarea
                     name="Description"
+                    placeholder="Enter your message here"
                     maxLength={32000}
                     value={formData.Description}
                     onChange={handleChange}
@@ -248,7 +256,7 @@ const ContactForm = () => {
               </div>
             )}
 
-            <div className="flex mt-10 items-center justify-end flex-1">
+            <div className="flex mt-10 items-center justify-start flex-1">
               <button
                 type="submit"
                 disabled={isSubmitting}
@@ -261,6 +269,7 @@ const ContactForm = () => {
             </div>
           </div>
         </form>
+        </div>
       </div>
     </div>
   );
