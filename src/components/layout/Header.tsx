@@ -71,9 +71,9 @@ const Header = () => {
         </div>
 
         {/* Main Header Section */}
-        <div className="px-[16px] py-[16px]  bg-white">
+        <div className=" py-[16px]  bg-white">
           <div className=" w-full container  flex justify-between items-center">
-            <div className="w-[162px]  h-[54px]">
+            <div className="w-[162px]  min-h-[54px]">
               <Link href="/" aria-current="page">
                 <Image
                   src="/images/logo.png"
