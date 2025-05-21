@@ -71,9 +71,9 @@ const ImpactSection = () => {
         {/* Left Column: Title and Logo */}
         <div className="flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-0">
           <div className="w-full lg:w-auto">
-            <h1 className=" text-center md:text-left">
+            <h3 className=" text-center lg:text-left ">
               IMPACT OF SOFTWARE
-            </h1>
+            </h3>
             <div className="w-[90px] sm:w-[133px] border border-[#24C16F] mx-auto lg:mx-0"></div>
           </div>
           <div className="w-48 sm:w-60 md:w-72 mt-6 lg:mt-0">

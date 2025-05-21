@@ -67,9 +67,9 @@ const FeaturesGrid = () => {
           {" "}
           <div className="flex flex-col gap-5 text-center">
             <div>
-              <h1 className="text-2xl sm:text-3xl md:text-[39px] font-bold mb-1.5  text-[#3A3A3A] leading-tight md:leading-[55px]">
+              <h3 className=" mb-1.5  text-[#3A3A3A]">
                 Real Time Monitoring and Analysis
-              </h1>
+              </h3>
               <div className="w-[90px] sm:w-[133px] border border-[#24C16F] mx-auto"></div>
             </div>
             <p className="text-base sm:text-[17px] leading-6 

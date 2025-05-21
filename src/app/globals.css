@@ -40,6 +40,7 @@
 body {
   color: #3a3a3a !important;
   background-color: #f6f6f8 !important;
+  overflow-x: hidden;
 }
 .roboto {
   font-family: "Roboto", sans-serif;

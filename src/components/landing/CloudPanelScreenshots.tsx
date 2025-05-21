@@ -33,9 +33,9 @@ const CloudPanelScreenshots = () => {
     <section className="py-[60px] px-4 sm:px-8 md:px-[80px]  bg-[#F6F6F8]">
       <div className="container gap-[50px] flex flex-col">
         <div>
-          <h1 className="text-2xl sm:text-3xl md:text-[39px] mb-1.5 font-bold text-center  text-[#3A3A3A] leading-tight md:leading-[55px]">
+          <h3 className=" mb-1.5 font-bold text-center  text-[#3A3A3A]">
             Few Screenshots of EnDetect Cloud Panel
-          </h1>
+          </h3>
           <div className="w-[90px] sm:w-[133px] border border-[#24C16F] mx-auto"></div>
         </div>
 

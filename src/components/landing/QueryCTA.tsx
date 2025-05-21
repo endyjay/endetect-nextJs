@@ -8,9 +8,9 @@ const QueryCTA = () => {
         {/* Text Content */}
         <div className="flex lg:text-left text-center  flex-col gap-4 ">
           <div>
-            <h1 className="text-2xl sm:text-3xl md:text-[42px] mb-1.5 font-bold text-white!  leading-tight md:leading-[55px]">
+            <h2 className=" mb-1.5  text-white! ">
               Have Queries?
-            </h1>
+            </h2>
             <div className="w-[90px] lg:w-[133px] mx-auto lg:float-left border border-[#24C16F] "></div>
           </div>
           <p className="text-white w-full lg:max-w-[586px] text-base sm:text-[17px] leading-6 mb-6 md:mb-0">

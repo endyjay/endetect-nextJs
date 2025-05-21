@@ -25,9 +25,9 @@ const MonitorViewTrace = () => {
     <section className="py-[50px] px-4 sm:px-8 md:px-20  bg-white">
       <div className="container gap-[40px] flex flex-col">
         <div>
-          <h1 className="text-2xl sm:text-3xl md:text-[39px] font-bold text-center mb-1.5  text-[#3A3A3A] leading-tight md:leading-[55px]">
+          <h3 className="  text-center mb-1.5   ">
             BENEFITS OF ENDETECT
-          </h1>
+          </h3>
           <div className="w-[90px] sm:w-[133px] border border-[#24C16F] mx-auto"></div>
         </div>
         <div className="container mx-auto px-0 sm:px-4">
@@ -52,7 +52,7 @@ const MonitorViewTrace = () => {
                   {/* <ArrowRightCircleIcon className="w-7 h-7 text-endetect-green mr-4 flex-shrink-0 mt-1" /> */}
                   <div className="w-full lg:text-left text-center flex  flex-col">
                     <p className="text-base lg:text-left text-center flex lg:flex-row  flex-col  w-full sm:text-lg  leading-[24px] font-bold font-montserrat text-[#282938] ">
-                      <ArrowRight className="w-5 h-5 text-[#24C16F] lg:text-left  text-center lg:w-fit w-full lg:-ml-2 lg:mr-2 " />{" "}
+                      <ArrowRight className=" h-5 text-[#24C16F] lg:text-left  text-center lg:w-fit w-full lg:-ml-2 lg:mr-2 " />{" "}
                       <span className="">
                         {item.title}
                       </span>
