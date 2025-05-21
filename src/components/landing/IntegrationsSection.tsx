@@ -26,23 +26,23 @@ const providers = [
 ];
 const integrationLogos = [
   {
-    src: "https://endetect.com/wp-content/uploads/2021/08/slack-int.svg",
+    src: "/images/slack-int.svg",
     alt: "Slack Integration",
   },
   {
-    src: "https://endetect.com/wp-content/uploads/2021/08/dropbox.svg",
+    src: "images/dropbox.svg",
     alt: "Dropbox Integration",
   },
   {
-    src: "https://endetect.com/wp-content/uploads/2021/08/logstash.svg",
+    src: "/images/logstash.svg",
     alt: "Logstash Integration",
   },
   {
-    src: "https://endetect.com/wp-content/uploads/2021/08/firebase.svg",
+    src: "/images/firebase.svg",
     alt: "Firebase Integration",
   },
   {
-    src: "https://endetect.com/wp-content/uploads/2021/08/web-api.svg",
+    src: "/images/web-api.svg",
     alt: "Web API Integration",
   },
 ];
