@@ -143,18 +143,18 @@ const Header = () => {
                 onClick={() => setMobileMenuOpen((open) => !open)}
               >
                 <span
-                  className={`block w-7 h-0.5 bg-[#24C16F] mb-1 transition-all duration-300 ${
+                  className={`block w-[31px] mr-auto h-1 rounded-md bg-[#24C16F] mb-1 transition-all duration-300 ${
                     mobileMenuOpen ? "rotate-45 translate-y-2" : ""
                   }`}
                 ></span>
                 <span
-                  className={`block w-7 h-0.5 bg-[#24C16F] mb-1 transition-all duration-300 ${
+                  className={`block w-[26px] mr-auto h-1 rounded-md bg-[#24C16F] mb-1 transition-all duration-300 ${
                     mobileMenuOpen ? "opacity-0" : ""
                   }`}
                 ></span>
                 <span
-                  className={`block w-7 h-0.5 bg-[#24C16F] transition-all duration-300 ${
-                    mobileMenuOpen ? "-rotate-45 -translate-y-2" : ""
+                  className={`block w-[20px] mr-auto h-1 rounded-md bg-[#24C16F] transition-all duration-300 ${
+                    mobileMenuOpen ? "-rotate-45 -translate-y-2 w-[31px]" : ""
                   }`}
                 ></span>
               </button>
