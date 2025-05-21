@@ -8,7 +8,8 @@ interface FooterLinkProps {
 
 const FooterLinkItem: React.FC<FooterLinkProps> = ({ href, text }) => (
   <li className="mb-2">
-    <Link href={href} className="--font-sofia-sans ">
+    <Link href={href} className="
+font-['Sofia_Pro'] ">
       {text}
     </Link>
   </li>

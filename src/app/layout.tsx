@@ -14,7 +14,6 @@ const roboto = Roboto({
 });
 
 const montserrat = Montserrat({
-  subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   style: ["normal"],
   variable: "--font-montserrat",
@@ -43,7 +42,7 @@ export default function RootLayout({
       lang="en"
       className={`${roboto.className} ${montserrat.variable} ${sofia_sans.variable}`}
     >
-      <body className={`flex bg-white flex-col min-h-screen`}>
+      <body className={`flex bg-[#F6F6F8] flex-col min-h-screen font-['Sofia_Pro']`}>
         <Header />
         <div className="flex-grow">{children}</div>
         <Footer />

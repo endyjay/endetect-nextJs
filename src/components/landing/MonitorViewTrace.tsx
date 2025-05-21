@@ -35,7 +35,7 @@ const MonitorViewTrace = () => {
             {/* Left Column: Image */}
             <div className="w-full max-w-[635px] h-auto lg:h-[367px] mb-6 lg:mb-0">
               <Image
-                src="https://i0.wp.com/endetect.com/wp-content/uploads/2021/08/activtiy_endy-01-copy.png?w=1160&ssl=1"
+                src="/images/benifits.webp"
                 alt="EnDetect Activity Monitoring Dashboard"
                 width={1160}
                 height={367}
@@ -50,10 +50,12 @@ const MonitorViewTrace = () => {
               {iconBoxData.map((item, index) => (
                 <div key={index} className="flex items-start  ">
                   {/* <ArrowRightCircleIcon className="w-7 h-7 text-endetect-green mr-4 flex-shrink-0 mt-1" /> */}
-                  <div>
-                    <p className="text-base sm:text-lg flex  leading-[24px] font-bold font-montserrat text-[#282938] ">
-                      <ArrowRight className="w-5 h-5 text-[#24C16F] -ml-2 mr-2 " />{" "}
-                      {item.title}
+                  <div className="w-full lg:text-left text-center flex  flex-col">
+                    <p className="text-base lg:text-left text-center flex lg:flex-row  flex-col  w-full sm:text-lg  leading-[24px] font-bold font-montserrat text-[#282938] ">
+                      <ArrowRight className="w-5 h-5 text-[#24C16F] lg:text-left  text-center lg:w-fit w-full lg:-ml-2 lg:mr-2 " />{" "}
+                      <span className="">
+                        {item.title}
+                      </span>
                     </p>
                     <p className="text-[#282938] ml-5 text-sm sm:text-[15px] leading-[23px] font-[400] font-sans">
                       {item.description}
@@ -61,10 +63,10 @@ const MonitorViewTrace = () => {
                   </div>
                 </div>
               ))}
-              <div className=" text-center lg:text-left">
+              <div className="flex justify-center lg:justify-start">
                 <Link
                   href="/contact" // Original link: contact/index.html
-                  className="text-[15px] sm:text-[16px] -ml-2 text-white font-semibold bg-green-500 py-3 px-5 hover:bg-[#169050] flex items-center justify-center text-lg w-fit duration-300 "
+                  className="text-[15px] sm:text-[16px]  md:-ml-2 text-white font-semibold bg-green-500 py-3 px-5 hover:bg-[#169050] flex items-center justify-center text-lg w-fit duration-300 "
                 >
                   Start Monitoring Now
                   <span>
