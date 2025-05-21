@@ -6,7 +6,7 @@ const Page = () => {
       <div className='container'>
         <div className='pb-[23px]'>
           <h1 className='text-center uppercase font-[600]!'>Disclaimer</h1>
-          <span className='w-[100%] my-[15px] mx-auto block max-w-[145px] md:max-w-[235px] h-[1px] bg-black' />
+          <span className='w-[100%] my-[15px] mx-auto block max-w-[145px] md:max-w-[235px] h-[1px] bg-[#24C16F]' />
         </div>
         <div className="text-[14px] leading-[22px]">
           <p className='mb-[24px]' >Innocode Ventures and its website enDetect.com contains various information in different forms – facts, figures, opinions, views, statements, recommendations, and references. Innocode does not represent or endorse the accuracy, completeness, reliability of any advice, opinion, statement, or any other information displayed, uploaded, distributed, linked through the website. The user acknowledges that any reliance upon any such opinion, advice, statement, or information shall be at the users' risk.</p>

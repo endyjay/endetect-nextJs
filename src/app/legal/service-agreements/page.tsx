@@ -7,7 +7,7 @@ const Page = () => {
                 <div className='pb-[23px]'>
                     <h1 className='text-center uppercase font-[600]!'>Service Level Agreements (SLA)
                     </h1>
-                    <span className='w-[100%] my-[15px] mx-auto block max-w-[145px] md:max-w-[235px] h-[1px] bg-black' />
+                    <span className='w-[100%] my-[15px] mx-auto block max-w-[145px] md:max-w-[235px] h-[1px] bg-[#24C16F]' />
                 </div>
                 <div className='text-[14px] leading-[22px]'>
                     <p className='mb-[24px]'>This is a Service Level Agreement (SLA) between Innocode Ventures (“Innocode”) and the User. This document identifies the services required and the expected level of services during the subscription period. This SLA describes Innocode&apos;s commitment to providing excellent customer satisfaction to each and every one of its customers.</p>
