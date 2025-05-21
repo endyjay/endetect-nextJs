@@ -54,16 +54,16 @@ const PriceTable = () => {
                           : ""
                       }`}
                     >
-                      <div className="font-bold text-[19px] sm:text-[16px] leading-6 font-['Sofia_Pro'] bg-[#130826] px-6 py-4 text-lg mb-2">
+                      <h5 className="text-[#fff]! bg-[#130826] px-6 py-4  mb-2">
                         {plan.name}
-                      </div>
+                      </h5>
                       <div className="flex flex-col gap-4">
                         <div>
                           <div className="mb-1">
-                            <span className="line-through text-[18px]  leading-5 font-[500] text-gray-300 mr-1">
+                            <span className="line-through text-[16px]  leading-5 font-[500] text-gray-900  mr-1">
                               {plan.priceOld}
                             </span>
-                            <span className="text-[#4ec08d] font-bold text-[19px] sm:text-[16px] leading-6 font-['Sofia_Pro']">
+                            <span className="text-[#24C16F] font-bold text-[16px] sm:text-[19px] leading-6 font-['Sofia_Pro']">
                               {plan.price}
                             </span>
                           </div>
@@ -75,7 +75,7 @@ const PriceTable = () => {
                           </div>
                         </div>
                         <div>
-                          <div className="text-xs text-[#4ec08d] font-[500]">
+                          <div className="text-xs text-[#24C16F] font-[500]">
                             {plan.offer}
                           </div>
                         </div>
