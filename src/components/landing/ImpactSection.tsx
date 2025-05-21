@@ -26,7 +26,7 @@ const ImpactItem: React.FC<ImpactItemProps> = ({
           objectFit="contain"
         />
       </div>
-      <h6 className="text-base sm:text-lg leading-6 font-bold">{title}</h6>
+      <h6 className=" sm:text-lg  text-white! leading-6 font-bold">{title}</h6>
       <p className="text-sm sm:text-[15px] leading-[23px] font-[400]">
         {description}
       </p>
@@ -71,7 +71,7 @@ const ImpactSection = () => {
         {/* Left Column: Title and Logo */}
         <div className="flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-0">
           <div className="w-full lg:w-auto">
-            <h1 className="text-2xl sm:text-3xl mb-1.5 md:text-[39px] font-bold text-center text-[#3A3A3A] leading-tight md:leading-[55px]">
+            <h1 className=" text-center md:text-left">
               IMPACT OF SOFTWARE
             </h1>
             <div className="w-[90px] sm:w-[133px] border border-[#24C16F] mx-auto lg:mx-0"></div>
@@ -89,9 +89,9 @@ const ImpactSection = () => {
           </div>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-4 sm:gap-[20px]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-[20px]">
           {impactItemsData.map((item, index) => (
-            <div key={index} className="flex-1">
+            <div key={index} className="">
               <ImpactItem
                 iconSrc={item.iconSrc}
                 iconAlt={item.iconAlt}

@@ -44,7 +44,7 @@ const Header = () => {
   useEffect(() => {
     if (mobileMenuOpen) {
       const handleResize = () => {
-        if (window.innerWidth >= 768) setMobileMenuOpen(false);
+        if (window.innerWidth >= 820  ) setMobileMenuOpen(false);
       };
       window.addEventListener("resize", handleResize);
       return () => window.removeEventListener("resize", handleResize);
@@ -86,7 +86,7 @@ const Header = () => {
               </div>
 
               {/* Desktop Nav & Buttons */}
-              <div className="hidden  md:flex items-center justify-between gap-[33px] text-nowrap  ">
+              <div className="hidden  lg:flex items-center justify-between gap-[33px] text-nowrap  ">
                 <nav
                   className="  w-full  "
                   aria-label="Site Navigation: Top Nav"
@@ -134,7 +134,7 @@ const Header = () => {
 
               {/* Hamburger Button for Mobile */}
               <button
-                className="md:hidden flex flex-col justify-center items-center w-10 h-10 focus:outline-none"
+                className="lg:hidden flex flex-col justify-center items-center w-10 h-10 focus:outline-none"
                 aria-label="Open navigation menu"
                 onClick={() => setMobileMenuOpen((open) => !open)}
               >
@@ -159,7 +159,7 @@ const Header = () => {
 
           {/* Mobile Menu Dropdown */}
           {mobileMenuOpen && (
-            <div className="md:hidden bg-white shadow-lg px-6 py-4 border-t border-gray-200 animate-fade-in-down">
+            <div className="lg:hidden bg-white shadow-lg px-6 py-4 border-t border-gray-200 animate-fade-in-down">
               <nav aria-label="Mobile Navigation">
                 <ul className="flex flex-col gap-4 mb-4">
                   {navLinks.map((link) => (

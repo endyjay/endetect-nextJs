@@ -153,7 +153,7 @@ const PriceTable = () => {
                     >
                       <Link
                         href={`https://in.bigin.online/org60041256722/bookings/demo`}
-                        className="bg-[#24C16F]  text-white font-[500] px-6 py-2 transition-colors duration-200 text-[16px]  whitespace-nowrap"
+                        className="bg-[#24C16F]  text-white font-[500] px-6 py-3 block w-fit mx-auto transition-colors duration-200 text-[16px]  whitespace-nowrap"
                       >
                         Schedule a Demo
                       </Link>
@@ -168,26 +168,26 @@ const PriceTable = () => {
         <div className="w-full px-4 md:hidden">
           <div
             ref={tableRef}
-            className="border bg-white overflow-x-auto  scroll-smooth"
+            className=" overflow-x-auto  scroll-smooth"
           >
-            <table className="h-full">
+            <table className="h-full mx-auto">
               <thead className="h-full ">
                 <tr className="h-full ">
                   <th className="bg-[#24C16F] border border-b-0 flex h-full w-full text-2xl text-[#222] font-bold flex-col px-4 py-4 text-left "></th>
-                  <th className="bg-[#130826]  text-white font-bold px-4 py-4 text-center w-1/2  border-[#3D3D3C]">
+                  <th className="bg-[#130826]  text-white! font-bold px-4 py-4 text-center w-1/2  border-[#3D3D3C]">
                     {plans[current].name}
                   </th>
                 </tr>
                 <tr>
-                  <td className="bg-[#24C16F] border-l flex h-full w-full text-2xl text-[#222] font-bold flex-col px-4 py-4 text-left  ">
+                  <td className="bg-[#24C16F] border-l border-t-0 flex h-full w-full text-2xl text-[#222] font-bold flex-col px-4 py-4 text-left  ">
                     Features
                   </td>
                   <td className="bg-[#F0F0F2] px-4 py-2 text-center border border-[#3D3D3C]">
                     <div className="mb-1">
-                      <span className="line-through text-[13px] leading-5 font-[500] text-gray-300 mr-1">
+                      <span className="line-through text-[13px] leading-5 font-[500] text-gray-900 mr-1">
                         {plans[current].priceOld}
                       </span>
-                      <span className="text-[#4ec08d] font-bold text-[16px] leading-6">
+                      <span className="text-[#24C16F] font-bold text-[16px] leading-6">
                         {plans[current].price}
                       </span>
                     </div>
@@ -197,7 +197,7 @@ const PriceTable = () => {
                     <div className="text-[13px] text-[#000000] leading-5 font-[500] mb-1">
                       {plans[current].billed}
                     </div>
-                    <div className="text-xs text-[#4ec08d] font-[500]">
+                    <div className="text-xs text-[#24C16F] font-[500]">
                       {plans[current].offer}
                     </div>
                   </td>
@@ -255,7 +255,7 @@ const PriceTable = () => {
                   <td className="px-4 py-4 text-center bg-white border border-[#3D3D3C]">
                     <Link
                       href={`https://in.bigin.online/org60041256722/bookings/demo`}
-                      className="bg-[#24C16F]  text-white font-[500] px-6 py-2 transition-colors duration-200 text-[13px] whitespace-nowrap"
+                      className="bg-[#24C16F]  text-white font-[500] px-6 py-3 block w-fit mx-auto transition-colors duration-200 text-[13px] whitespace-nowrap"
                     >
                       Schedule a Demo
                     </Link>
