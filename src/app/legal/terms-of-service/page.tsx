@@ -10,7 +10,7 @@ const Page = () => {
           </h1>
           <span className="w-[100%] my-[15px] mx-auto block max-w-[145px] md:max-w-[235px] h-[1px] bg-[#24C16F]" />
         </div>
-        <div className="text-[14px] leading-[22px]">
+        <div className="text-[14px] px-4 leading-[22px]">
           <p className="mb-[24px]">
             This Agreement is made, entered into and executed at New Delhi,
             India on current date.

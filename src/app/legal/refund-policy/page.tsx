@@ -10,7 +10,7 @@ const Page = () => {
           </h1>
           <span className="w-[100%] my-[15px] mx-auto block max-w-[145px] md:max-w-[235px] h-[1px] bg-[#24C16F]" />
         </div>
-        <div className="elementor-widget-container">
+        <div className="elementor-widget-container px-4">
           <p>
             At Innocode Ventures, we strive our best to make sure that a
             customer is completely satisfied with our products and/or services.

@@ -8,7 +8,7 @@ const Page = () => {
           <h1 className="text-center uppercase font-[600]!">Pricing Policy</h1>
           <span className="w-[100%] my-[15px] mx-auto block max-w-[145px] md:max-w-[235px] h-[1px] bg-[#24C16F]" />
         </div>
-        <div className="text-[14px] leading-[22px]">
+        <div className="text-[14px] px-4 leading-[22px]">
           <p>
             <span style={{ fontWeight: 400 }}>
               At Innocode, we are committed to offering{" "}

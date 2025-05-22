@@ -8,7 +8,7 @@ const Page = () => {
           <h1 className="text-center uppercase font-[600]!">Privacy Policy</h1>
           <span className="w-[100%] my-[15px] mx-auto block max-w-[145px] md:max-w-[235px] h-[1px] bg-[#24C16F]" />
         </div>
-        <div className="text-[14px] leading-[22px]">
+        <div className="text-[14px] px-4 leading-[22px]">
           <p className="mb-[24px]">
             We hold in high esteem the privacy of every Innocode&apos;s user.
             This Privacy Policy contains the details about the information

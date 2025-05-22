@@ -2,7 +2,7 @@ import React from 'react'
 
 const Page = () => {
   return (
-    <div className='pricing-policy min-h-[100vh] bg-[#F6F6F8] py-[10px]'>
+    <div className='pricing-policy px-4 min-h-[100vh] bg-[#F6F6F8] py-[10px]'>
       <div className='container'>
         <div className='pb-[23px]'>
           <h1 className='text-center uppercase font-[600]!'>Cancellation Policy</h1>

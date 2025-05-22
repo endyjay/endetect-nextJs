@@ -9,7 +9,7 @@ const Page = () => {
                     </h1>
                     <span className='w-[100%] my-[15px] mx-auto block max-w-[145px] md:max-w-[235px] h-[1px] bg-[#24C16F]' />
                 </div>
-                <div className="text-[14px] leading-[22px]">
+                <div className="text-[14px] px-4 leading-[22px]">
                     <p className='mb-[24px]' >TERMS APPLICABLE TO YOUR USE OF THE SOFTWARE<br />
                         Your use of EnDetect Software or EnDetect Web Console is subject to the Terms of Service, Privacy Policy, Disclaimer, Refund Policy, Service Level Agreements or any other Agreements that are made available at www.enDetect.com or otherwise accompany the use of such Software and will be agreed upon between you and Innocode Ventures ${`(Innocode)`}.</p>
                     <p className='mb-[24px]' >If there is a conflict or inconsistency between these Terms and any other Agreement${`(s)`} signed between you and InnoCode, the latter shall have precedence with respect to your access and use of that Software.</p>
