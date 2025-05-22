@@ -22,6 +22,7 @@ export const plans = [
       true, // USB Drive Access Logs
       true, // Team Productivity Analysis
       true, // On Demand Screenshot
+      false, // Get Employees Location
       false, // Website Visit History
       false, // Social Media Activity Report
       false, // Video Access Report
@@ -68,6 +69,7 @@ export const plans = [
       true, // USB Drive Access Logs
       true, // Team Productivity Analysis
       true, // On Demand Screenshot
+      true, // Get Employees Location
       true, // Website Visit History
       true, // Social Media Activity Report
       true, // Video Access Report
@@ -114,6 +116,7 @@ export const plans = [
       true, // USB Drive Access Logs
       true, // Team Productivity Analysis
       true, // On Demand Screenshot
+      true, // Get Employees Location
       true, // Website Visit History
       true, // Social Media Activity Report
       true, // Video Access Report
@@ -153,6 +156,7 @@ export const featureList = [
   "USB Drive Access Logs",
   "Team Productivity Analysis",
   "On Demand Screenshot",
+  "Get Employees Location",
   "Website Visit History",
   "Social Media Activity Report",
   "Video Access Report",
