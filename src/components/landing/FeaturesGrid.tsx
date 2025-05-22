@@ -2,58 +2,58 @@ import Image from "next/image";
 
 const features = [
   {
-    iconSrc: "https://endetect.com/wp-content/uploads/2020/04/internet.gif", // Original: internet7b20.gif
+    iconSrc: "/images/internet.gif",
     title: "Website History",
     description: "Track all website visits within your organization",
   },
   {
     iconSrc:
-      "https://endetect.com/wp-content/uploads/2020/04/facebook-messenger-click.gif", // Original: facebook-messenger-click7b20.gif
+      "/images/facebook-messenger-click.webp", 
     title: "Social Media Activity Report",
     description:
       "You can track all social media activity of your employee with URL and screenshots.",
   },
   {
     iconSrc:
-      "https://endetect.com/wp-content/uploads/2020/04/list-is-empty.gif", // Original: list-is-empty7b20.gif
+      "images/list-is-empty.webp",
     title: "Time Sheet",
     description:
       "Tracks login and logout time of your employee with idle time logs and active and productive time analysis.",
   },
   {
-    iconSrc: "https://endetect.com/wp-content/uploads/2020/04/activity.gif", // Original: activity7b20.gif
+    iconSrc: "/images/activity.webp",
     title: "Behaviors Analysis",
     description:
       "Tracks abusive, malicious and threat-full behavior within your organization",
   },
   {
     iconSrc:
-      "https://endetect.com/wp-content/uploads/2020/04/warning-blink.gif", // Original: warning-blink7b20.gif
+      "/images/warning-blink.webp",
     title: "Alert Manager",
     description:
       "You can manage alerts on typed words, copied text, deleted/copied file, Website visits, Bandwidth usage etc",
   },
   {
     iconSrc:
-      "https://endetect.com/wp-content/uploads/2020/04/folder-with-files.gif", // Original: folder-with-files7b20.gif
+      "/images/folder-with-files.webp", 
     title: "USB Storage",
     description:
       "Tracks and logs USB Storage inserts (Pen Drive, Hard Disk etc)",
   },
   {
     iconSrc:
-      "https://endetect.com/wp-content/uploads/2020/04/computer-display.gif", // Original: computer-display7b20.gif
+      "/images/computer-display.webp", 
     title: "Screenshot",
     description: `Fetches screenshot of employee's computer every 10 minutes and can be customized`,
   },
   {
-    iconSrc: "https://endetect.com/wp-content/uploads/2020/04/settings.gif", // Original: settings7b20.gif
+    iconSrc: "/images/settings.webp", 
     title: "Software Usage",
     description:
       "Tracks and records all software usage and employee productivity analysis",
   },
   {
-    iconSrc: "https://endetect.com/wp-content/uploads/2020/04/Untitled-1-1.gif", // Original: Untitled-1-17b20.gif
+    iconSrc: "/images/keyboard.webp", 
     title: "Keyboard Activity",
     description: "Logs all keystrokes, clipboard operations in real time",
   },
@@ -67,9 +67,9 @@ const FeaturesGrid = () => {
           {" "}
           <div className="flex flex-col gap-5 text-center">
             <div>
-              <h1 className="text-2xl sm:text-3xl md:text-[39px] font-bold mb-1.5  text-[#3A3A3A] leading-tight md:leading-[55px]">
+              <h3 className=" mb-1.5  text-[#3A3A3A]">
                 Real Time Monitoring and Analysis
-              </h1>
+              </h3>
               <div className="w-[90px] sm:w-[133px] border border-[#24C16F] mx-auto"></div>
             </div>
             <p className="text-base sm:text-[17px] leading-6 

@@ -67,7 +67,6 @@ export default function HomePage() {
       <AboutStatsSection />
      
       <ImpactSection />
-      {/* Add other sections here */}
     </main>
   );
 }

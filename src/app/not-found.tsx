@@ -4,7 +4,7 @@ import React from "react";
 
 const notFound = () => {
   return (
-    <div className="min-h-screen pt-[120px] bg-white flex flex-col gap-6 items-center justify-center">
+    <div className="min-h-[calc(100vh-140px)] bg-white flex flex-col gap-6 items-center justify-center">
       <i className="fa-solid fa-ghost text-5xl text-[#E56902]"></i>
       <h1 className="text-2xl font-bold text-gray-600">404 - Page Not Found</h1>
       <p className="text-gray-500">
