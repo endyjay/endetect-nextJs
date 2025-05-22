@@ -2,6 +2,42 @@ import React from 'react'
 import { IoCall } from "react-icons/io5";
 import { IoMdMail } from "react-icons/io";
 
+export const metadata = {
+  title: "Support - EnDetect",
+  description:
+    "Contact us via following details for support +91 9711 28 6969 support@endetect.com",
+  robots:
+    "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  alternates: {
+    canonical: "https://endetect.com/support/",
+  },
+  openGraph: {
+    locale: "en_US",
+    type: "article",
+    title: "Support - EnDetect",
+    description:
+      "Contact us via following details for support +91 9711 28 6969 support@endetect.com",
+    url: "https://endetect.com/support/",
+    siteName: "EnDetect",
+    images: [
+      {
+        url: "https://pub-868e70c0da584e488cabbf226b5d569e.r2.dev/endetect-og.jpg",
+        width: 1200,
+        height: 628,
+        alt: "EnDetect Support Information",
+      },
+    ],
+    updatedTime: "2025-05-22T00:00:00+00:00",
+    publishedTime: "2021-11-08T07:21:57+00:00",
+    modifiedTime: "2025-05-22T00:00:00+00:00",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Support - EnDetect",
+    description:
+      "Contact us via following details for support +91 9711 28 6969 support@endetect.com",
+  },
+};
 
 const page = () => {
   return (

@@ -2,11 +2,13 @@
 import Link from "next/link";
 import Image from "next/image"; // Will be used for the logo
 import React, { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
   const [showHeader, setShowHeader] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   const navLinks = [
     { href: "/", label: "Home" },
@@ -95,7 +97,9 @@ const Header = () => {
                     {navLinks.map((link) => (
                       <li
                         key={link.href}
-                        className="menu-item hover:text-[#24C16F] hover:underline hover:font-[700]"
+                        className={`menu-item hover:text-[#24C16F] hover:underline hover:font-[700] ${
+                          pathname === link.href ? "text-[#24C16F]  font-[700]" : ""
+                        }`}
                       >
                         <Link
                           href={link.href}
@@ -114,7 +118,7 @@ const Header = () => {
                       href="https://in.bigin.online/org60041256722/bookings/demo"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="ast-custom-button text-white bg-[#24C16F]  hover:bg-[#189c56] text-[16px] font-[500]  px-[20px] sm:px-[30px] py-[12px] sm:py-[12px] transition-colors duration-300"
+                      className="ast-custom-button text-white bg-[#24C16F]  hover:bg-[#189c56] text-[16px] font-[500]  px-[20px] sm:px-[30px] py-[10px] sm:py-[10px] block transition-colors duration-300"
                     >
                       Schedule a Demo
                     </a>
@@ -124,7 +128,7 @@ const Header = () => {
                       href="https://app.endetect.com/login.php"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="ast-custom-button text-white bg-[#E56902] hover:bg-[#b0550b] text-[16px] font-[500]  px-[20px] sm:px-[30px] py-[12px] sm:py-[12px] transition-colors duration-300"
+                      className="ast-custom-button text-white bg-[#E56902] hover:bg-[#b0550b] text-[16px] font-[500]  px-[20px] sm:px-[30px] py-[10px] sm:py-[10px] block transition-colors duration-300"
                     >
                       Login
                     </a>
@@ -139,18 +143,18 @@ const Header = () => {
                 onClick={() => setMobileMenuOpen((open) => !open)}
               >
                 <span
-                  className={`block w-7 h-0.5 bg-[#24C16F] mb-1 transition-all duration-300 ${
+                  className={`block w-[31px] mr-auto h-1 rounded-md bg-[#24C16F] mb-1 transition-all duration-300 ${
                     mobileMenuOpen ? "rotate-45 translate-y-2" : ""
                   }`}
                 ></span>
                 <span
-                  className={`block w-7 h-0.5 bg-[#24C16F] mb-1 transition-all duration-300 ${
+                  className={`block w-[26px] mr-auto h-1 rounded-md bg-[#24C16F] mb-1 transition-all duration-300 ${
                     mobileMenuOpen ? "opacity-0" : ""
                   }`}
                 ></span>
                 <span
-                  className={`block w-7 h-0.5 bg-[#24C16F] transition-all duration-300 ${
-                    mobileMenuOpen ? "-rotate-45 -translate-y-2" : ""
+                  className={`block w-[20px] mr-auto h-1 rounded-md bg-[#24C16F] transition-all duration-300 ${
+                    mobileMenuOpen ? "-rotate-45 -translate-y-2 w-[31px]" : ""
                   }`}
                 ></span>
               </button>
@@ -166,7 +170,9 @@ const Header = () => {
                     <li key={link.href} className="menu-item">
                       <Link
                         href={link.href}
-                        className="block text-[#3A3A3A] text-lg font-medium py-2 hover:text-[#24C16F] hover:underline"
+                        className={`block text-lg font-medium py-2 hover:text-[#24C16F] hover:underline ${
+                          pathname === link.href ? "text-[#24C16F] font-[700]" : "text-[#3A3A3A]"
+                        }`}
                         onClick={() => setMobileMenuOpen(false)}
                       >
                         {link.label}

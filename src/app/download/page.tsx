@@ -1,5 +1,38 @@
 import Image from 'next/image'
 import React from 'react'
+export const metadata = {
+  title: "Download - EnDetect",
+  description: "Download",
+  robots:
+    "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  alternates: {
+    canonical: "https://endetect.com/download/",
+  },
+  openGraph: {
+    locale: "en_US",
+    type: "article",
+    title: "Download - EnDetect",
+    description: "Download",
+    url: "https://endetect.com/download/",
+    siteName: "EnDetect",
+    images: [
+      {
+        url: "https://pub-868e70c0da584e488cabbf226b5d569e.r2.dev/endetect-og.jpg",
+        width: 1200,
+        height: 628,
+        alt: "EnDetect Employee Monitoring",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Download - EnDetect",
+    description: "Download",
+    images: [
+      "https://pub-868e70c0da584e488cabbf226b5d569e.r2.dev/endetect-og.jpg",
+    ],
+  },
+};
 
 const Page = () => {
   return (

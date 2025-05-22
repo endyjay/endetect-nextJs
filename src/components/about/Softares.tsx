@@ -8,38 +8,38 @@ const Slider = dynamic(() => import("react-slick"), {
 
 const customers = [
   {
-    src: "https://i0.wp.com/endetect.com/wp-content/uploads/2020/04/luggage.png?fit=85%2C85&ssl=1",
-    alt: "",
+    src: "/images/luggage.webp",
+    alt: "luggage icon",
     name: "",
   },
   {
-    src: "https://i0.wp.com/endetect.com/wp-content/uploads/2020/04/plane.png?fit=85%2C85&ssl=1",
-    alt: "",
+    src: "/images/plane.webp",
+    alt: "plane icon",
     name: "",
   },
   {
-    src: "https://i0.wp.com/endetect.com/wp-content/uploads/2020/04/cart.png?fit=85%2C85&ssl=1",
-    alt: "",
+    src: "/images/cart.webp",
+    alt: "cart icon",
     name: "",
   },
   {
-    src: "https://i0.wp.com/endetect.com/wp-content/uploads/2020/04/cms.png?fit=85%2C85&ssl=1",
-    alt: "",
+    src: "/images/cms.webp",
+    alt: "cms icon",
     name: "",
   },
   {
-    src: "https://i0.wp.com/endetect.com/wp-content/uploads/2020/04/book.png?fit=85%2C85&ssl=1",
-    alt: "",
+    src: "/images/book.webp",
+    alt: "book icon",
     name: "",
   },
   {
-    src: "https://i0.wp.com/endetect.com/wp-content/uploads/2020/04/icons8-insurance-agent-100.png?fit=85%2C85&ssl=1",
-    alt: "",
+    src: "/images/icons8-insurance-agent-100.webp",
+    alt: "insurance agent icon",
     name: "",
   },
   {
-    src: "https://i0.wp.com/endetect.com/wp-content/uploads/2020/04/hospital.png?fit=85%2C85&ssl=1",
-    alt: "",
+    src: "/images/hospital.webp",
+    alt: "hospital icon",
     name: "",
   },
 
@@ -47,19 +47,19 @@ const customers = [
 ];
 const softwares = [
   {
-    src: "https://i0.wp.com/endetect.com/wp-content/uploads/2020/05/three-1.jpg?w=296&h=185&ssl=1",
+    src: "/images/three-1.webp",
     alt: "Secure Transaction",
   },
   {
-    src: "https://i0.wp.com/endetect.com/wp-content/uploads/2020/05/one-1.jpg?w=296&h=185&ssl=1",
+    src: "/images/one-1.webp",
     alt: "GDPR Compliance",
   },
   {
-    src: "https://i0.wp.com/endetect.com/wp-content/uploads/2020/05/four-1.jpg?w=296&h=185&ssl=1",
+    src: "/images/four-1.webp",
     alt: "Data Protection",
   },
   {
-    src: "https://i0.wp.com/endetect.com/wp-content/uploads/2020/05/two-1.jpg?w=296&h=185&ssl=1",
+    src: "/images/two-1.webp",
     alt: "ISO",
   },
 ];

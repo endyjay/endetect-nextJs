@@ -1,21 +1,17 @@
-"use client"
+"use client";
 import React from "react";
 
 const ContactForm = () => {
-
   return (
-
-    <div className="h-auto">
-      <iframe 
-          src="/static/html/index.html" 
-          width="100%"
-          height="600px"
-          style={{ border: 'none' }}
-          title="Embedded HTML"
+    <div className="h-full">
+      <iframe
+        className=""
+        src="/static/html/index.html"
+        width="100%"
+        height="700px"
+        style={{ border: "none" }}
+        title="Embedded HTML"
       />
-      
-
-   
     </div>
   );
 };

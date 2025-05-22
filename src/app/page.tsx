@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   robots:
     "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
   alternates: {
-    canonical: "/", // Assuming this will be the root page
+    canonical: "/",
   },
   openGraph: {
     locale: "en_US",
@@ -29,29 +29,26 @@ export const metadata: Metadata = {
       "EnDetect : Employee Monitoring and Productivity Tracking Software for Productive Teams",
     description:
       "Track Employee with best employee monitoring and productivity tracking software with website history, behavior analysis report, keyboard activity and screenshot etc. Call us at 011-40141053 for Demo.",
-    url: "https://endetect.com/", // Replace with your actual domain
-    siteName: "Endetect",
-    // TODO: Add Open Graph images once they are available and paths are known
-    // images: [
-    //   {
-    //     url: '/path/to/og-image.jpg', // Replace with actual image path
-    //     width: 1200,
-    //     height: 630,
-    //     alt: 'EnDetect Employee Monitoring',
-    //   },
-    // ],
+    url: "https://endetect.com/",
+    siteName: "EnDetect",
+    images: [
+      {
+        url: "https://pub-868e70c0da584e488cabbf226b5d569e.r2.dev/endetect-og.jpg",
+        width: 1200,
+        height: 628,
+        alt: "EnDetect Employee Monitoring",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title:
-      "EnDetect : Employee Monitoring and Productivity Tracking Software for Productive Teams",
+    title: "EnDetect : Best Employee Activity Monitoring Software",
     description:
-      "Track Employee with best employee monitoring and productivity tracking software with website history, behavior analysis report, keyboard activity and screenshot etc. Call us at 011-40141053 for Demo.",
-    // TODO: Add Twitter image once available
-    // images: ['/path/to/twitter-image.jpg'], // Replace with actual image path
+      "Employee Activity Monitoring Software - Monitor and track your employee's activity with great features eg : Frequent Screenshots, TIme sheets, Installed Software Report, browse history, social media reports, logs and USB storage access. Ask for a Demo now. Call us at +91-11-40141053.",
+    images: [
+      "https://pub-868e70c0da584e488cabbf226b5d569e.r2.dev/endetect-og.jpg",
+    ],
   },
-  // Other relevant meta tags can be added here if needed
-  // e.g., themeColor, viewport (though Next.js handles viewport well by default)
 };
 
 export default function HomePage() {
@@ -67,7 +64,6 @@ export default function HomePage() {
       <AboutStatsSection />
      
       <ImpactSection />
-      {/* Add other sections here */}
     </main>
   );
 }

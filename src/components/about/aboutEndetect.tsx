@@ -2,8 +2,8 @@ import React from 'react'
 
 const AboutEndetect = () => {
   return (
-    <section className="bg-[#F6F6F8]   py-[70px] px-4 sm:px-8 md:px-[190px] lg:px-[235px] ">
-      <div className="container flex flex-col items-center gap-5">
+    <section className="bg-[#F6F6F8]   py-[70px] px-4 ">
+      <div className="max-w-[866px] mx-auto flex flex-col items-center gap-5">
         <div>
           <h1 className="text-5xl sm:text-3xl mb-1.5 md:text-[48px] font-bold  text-[#3A3A3A] leading-tight md:leading-[67px]">
             About EnDetect

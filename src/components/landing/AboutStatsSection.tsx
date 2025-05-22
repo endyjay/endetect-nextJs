@@ -42,11 +42,11 @@ const AboutStatsSection = () => {
     <section className="py-[60px] px-4 sm:px-8 md:px-[80px] bg-[#F6F6F8]">
       <div className="flex flex-col container lg:flex-row justify-between items-center gap-10 lg:gap-0">
         {/* Column 1: About Us */}
-        <div className="w-full  lg:max-w-[547px] w-full flex flex-col gap-[20px] mb-8 lg:mb-0">
+        <div className="  lg:max-w-[547px] w-full flex flex-col gap-[20px] mb-8 lg:mb-0">
           <div>
-            <h1 className="text-2xl text-center lg:text-left  mb-1.5 sm:text-3xl md:text-[39px] font-bold text-[#3A3A3A] leading-tight md:leading-[55px]">
+            <h3 className="text-2xl text-center lg:text-left  mb-1.5 sm:text-3xl md:text-[39px] font-bold text-[#3A3A3A] leading-tight md:leading-[55px]">
               About Us
-            </h1>
+            </h3>
             <div className="w-[90px] lg:float-left mx-auto sm:w-[133px] border border-[#24C16F]"></div>
           </div>
           <div className="

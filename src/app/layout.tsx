@@ -31,6 +31,7 @@ export const metadata: Metadata = {
   title: "EnDetect - Employee Monitoring Software",
   description:
     "EnDetect provides advanced employee monitoring and productivity tracking solutions.",
+    
 };
 
 export default function RootLayout({

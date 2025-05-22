@@ -22,6 +22,42 @@ import { FaTasks } from "react-icons/fa";
 import { MdCloudUpload } from "react-icons/md";
 import { FaUsersCog } from "react-icons/fa";
 
+export const metadata = {
+  title: "Products - EnDetect",
+  description:
+    "Recommended for Startups having less than 5 employees and want basic monitoring.",
+  robots:
+    "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  alternates: {
+    canonical: "https://endetect.com/products/",
+  },
+  openGraph: {
+    locale: "en_US",
+    type: "article",
+    title: "Products - EnDetect",
+    description:
+      "Recommended for Startups having less than 5 employees and want basic monitoring.",
+    url: "https://endetect.com/products/",
+    siteName: "EnDetect",
+    images: [
+      {
+        url: "https://pub-868e70c0da584e488cabbf226b5d569e.r2.dev/endetect-og.jpg",
+        width: 1200,
+        height: 628,
+        alt: "EnDetect Products Overview",
+      },
+    ],
+    updatedTime: "2025-05-22T00:00:00+00:00",
+    publishedTime: "2020-04-11T13:27:05+00:00",
+    modifiedTime: "2025-05-22T00:00:00+00:00",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Products - EnDetect",
+    description:
+      "Recommended for Startups having less than 5 employees and want basic monitoring.",
+  },
+};
 
 
 
