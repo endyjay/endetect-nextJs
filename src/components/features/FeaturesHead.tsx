@@ -14,12 +14,12 @@ const FeaturesHead = () => {
             </h4>
             <div className="w-[90px] md:m-0 sm:w-[133px] mx-auto border border-[#24C16F]"></div>
             <Link
-            href="https://in.bigin.online/org60041256722/bookings/demo"
-            target="_blank"
-            className="text-nowrap shadow-lg mx-auto flex w-fit mt-5 font-[400] bg-[#24C16F] items-center justify-center md:mx-0 hover:bg-[#169050] text-white text-base md:text-lg py-3 px-5  duration-300 "
-          >
-            Ask Demo
-          </Link>
+              href="https://calendly.com/endetect/demo/"
+              target="_blank"
+              className="text-nowrap shadow-lg mx-auto flex w-fit mt-5 font-[400] bg-[#24C16F] items-center justify-center md:mx-0 hover:bg-[#169050] text-white text-base md:text-lg py-3 px-5  duration-300 "
+            >
+              Ask Demo
+            </Link>
           </div>
 
           <div className=" w-full! md:w-1/2">

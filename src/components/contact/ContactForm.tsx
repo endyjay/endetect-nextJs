@@ -3,12 +3,12 @@ import React from "react";
 
 const ContactForm = () => {
   return (
-    <div className="h-full">
+    <div className=" scrollbar-hide">
       <iframe
-        className=""
+        className="w-full"
         src="/static/html/index.html"
         width="100%"
-        height="700px"
+        height="750px"
         style={{ border: "none" }}
         title="Embedded HTML"
       />
