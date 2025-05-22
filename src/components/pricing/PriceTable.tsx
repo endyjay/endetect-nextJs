@@ -152,7 +152,7 @@ const PriceTable = () => {
                       }`}
                     >
                       <Link
-                        href={`https://in.bigin.online/org60041256722/bookings/demo`}
+                        href={`https://calendly.com/endetect/demo/`}
                         className="bg-[#24C16F]  text-white font-[500] px-6 py-3 block w-fit mx-auto transition-colors duration-200 text-[16px]  whitespace-nowrap"
                       >
                         Schedule a Demo
@@ -166,10 +166,7 @@ const PriceTable = () => {
         </div>
         {/* Mobile Slider */}
         <div className="w-full px-4 md:hidden">
-          <div
-            ref={tableRef}
-            className=" overflow-x-auto  scroll-smooth"
-          >
+          <div ref={tableRef} className=" overflow-x-auto  scroll-smooth">
             <table className="h-full mx-auto">
               <thead className="h-full ">
                 <tr className="h-full ">
@@ -254,7 +251,7 @@ const PriceTable = () => {
                   <td className="px-4 py-4 bg-white border border-[#3D3D3C]"></td>
                   <td className="px-4 py-4 text-center bg-white border border-[#3D3D3C]">
                     <Link
-                      href={`https://in.bigin.online/org60041256722/bookings/demo`}
+                      href={`https://calendly.com/endetect/demo/`}
                       className="bg-[#24C16F]  text-white font-[500] px-6 py-3 block w-fit mx-auto transition-colors duration-200 text-[13px] whitespace-nowrap"
                     >
                       Schedule a Demo

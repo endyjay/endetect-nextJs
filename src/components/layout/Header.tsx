@@ -98,7 +98,9 @@ const Header = () => {
                       <li
                         key={link.href}
                         className={`menu-item hover:text-[#24C16F] hover:underline hover:font-[700] ${
-                          pathname === link.href ? "text-[#24C16F]  font-[700]" : ""
+                          pathname === link.href
+                            ? "text-[#24C16F]  font-[700]"
+                            : ""
                         }`}
                       >
                         <Link
@@ -115,7 +117,7 @@ const Header = () => {
                 <div className="w-full  flex items-center gap-[16px]">
                   <div className="">
                     <a
-                      href="https://in.bigin.online/org60041256722/bookings/demo"
+                      href="https://calendly.com/endetect/demo/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="ast-custom-button text-white bg-[#24C16F]  hover:bg-[#189c56] text-[16px] font-[500]  px-[20px] sm:px-[30px] py-[10px] sm:py-[10px] block transition-colors duration-300"
@@ -171,7 +173,9 @@ const Header = () => {
                       <Link
                         href={link.href}
                         className={`block text-lg font-medium py-2 hover:text-[#24C16F] hover:underline ${
-                          pathname === link.href ? "text-[#24C16F] font-[700]" : "text-[#3A3A3A]"
+                          pathname === link.href
+                            ? "text-[#24C16F] font-[700]"
+                            : "text-[#3A3A3A]"
                         }`}
                         onClick={() => setMobileMenuOpen(false)}
                       >

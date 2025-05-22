@@ -61,7 +61,7 @@ const Addresses = () => {
           </div>
           <div className="">
             <a
-              href="https://in.bigin.online/org60041256722/bookings/demo"
+              href="https://calendly.com/endetect/demo/"
               target="_blank"
               rel="noopener noreferrer"
               className="ast-custom-button block text-white bg-[#24C16F]  hover:bg-[#189c56] text-[16px] sm:text-[18px] font-[500]  px-[20px] sm:px-[30px] py-[12px] sm:py-[12px] transition-colors duration-300"
