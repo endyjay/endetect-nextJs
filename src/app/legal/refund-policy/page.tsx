@@ -1,4 +1,40 @@
 import React from "react";
+export const metadata = {
+  title: "Refund Policy - EnDetect",
+  description:
+    "At Innocode Ventures, we strive our best to make sure that a customer is completely satisfied with our products and/or services. Accordingly, our team",
+  robots:
+    "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  alternates: {
+    canonical: "https://endetect.com/legal/refund-policy/",
+  },
+  openGraph: {
+    locale: "en_US",
+    type: "article",
+    title: "Refund Policy - EnDetect",
+    description:
+      "At Innocode Ventures, we strive our best to make sure that a customer is completely satisfied with our products and/or services. Accordingly, our team",
+    url: "https://endetect.com/legal/refund-policy/",
+    siteName: "EnDetect",
+    images: [
+      {
+        url: "https://pub-868e70c0da584e488cabbf226b5d569e.r2.dev/endetect-og.jpg",
+        width: 1200,
+        height: 628,
+        alt: "EnDetect Employee Monitoring",
+      },
+    ],
+    updatedTime: "2025-05-22T00:00:00+00:00",
+    publishedTime: "2020-04-02T11:16:40+00:00",
+    modifiedTime: "2025-05-22T00:00:00+00:00",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Refund Policy - EnDetect",
+    description:
+      "At Innocode Ventures, we strive our best to make sure that a customer is completely satisfied with our products and/or services. Accordingly, our team",
+  },
+};
 
 const Page = () => {
   return (

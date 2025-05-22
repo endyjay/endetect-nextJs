@@ -134,7 +134,7 @@ const Footer = () => {
           <hr className="text-[#C1C1C1] w-full my-[20px]" />
         </div>
         <p className="text-center text-sm sm:text-[15px] leading-[23px] font-[400]">
-          Copyright © {new Date().getFullYear()} Endetect.
+          Copyright © {new Date().getFullYear()} EnDetect.
         </p>
       </div>
     </footer>

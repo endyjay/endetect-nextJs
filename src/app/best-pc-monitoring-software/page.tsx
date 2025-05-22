@@ -2,6 +2,45 @@ import FeaturesHead from '@/components/features/FeaturesHead'
 import { ArrowRight, Check } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
+export const metadata = {
+  title:
+    "Work from Home Tracking Software For Productive Teams, Remote Employee Monitoring",
+  description:
+    "Work from home tracking Software - Track all the activities of Employee with EnDetect. EnDetect helps you to manage 100% transparency and increase your business productivity by 40%. Ask for a Demo now.",
+  robots:
+    "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  alternates: {
+    canonical: "https://endetect.com/best-pc-monitoring-software/",
+  },
+  openGraph: {
+    locale: "en_US",
+    type: "article",
+    title:
+      "Work from Home Tracking Software For Productive Teams, Remote Employee Monitoring",
+    description:
+      "Work from home tracking Software - Track all the activities of Employee with EnDetect. EnDetect helps you to manage 100% transparency and increase your business productivity by 40%. Ask for a Demo now.",
+    url: "https://endetect.com/best-pc-monitoring-software/",
+    siteName: "EnDetect",
+    images: [
+      {
+        url: "https://pub-868e70c0da584e488cabbf226b5d569e.r2.dev/endetect-og.jpg",
+        width: 1200,
+        height: 628,
+        alt: "EnDetect Employee Monitoring",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Work from Home Tracking Software For Productive Teams, Remote Employee Monitoring",
+    description:
+      "Work from home tracking Software - Track all the activities of Employee with EnDetect. EnDetect helps you to manage 100% transparency and increase your business productivity by 40%. Ask for a Demo now.",
+    images: [
+      "https://pub-868e70c0da584e488cabbf226b5d569e.r2.dev/endetect-og.jpg",
+    ],
+  },
+};
 
 const page = () => {
   return (

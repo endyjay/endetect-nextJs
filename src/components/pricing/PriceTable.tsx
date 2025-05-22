@@ -1,5 +1,5 @@
 "use client";
-import { featureList, plans } from "@/app/lib/plans";
+import { featureList, plans } from "@/lib/plans";
 import Link from "next/link";
 import React, { useState, useRef, useEffect } from "react";
 

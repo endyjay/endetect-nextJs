@@ -1,4 +1,40 @@
 import React from 'react'
+export const metadata = {
+  title: "Service Agreements - EnDetect",
+  description:
+    "This is a Service Level Agreement (SLA) between Innocode Ventures (“Innocode”) and the User. This document identifies the services required and the expected",
+  robots:
+    "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  alternates: {
+    canonical: "https://endetect.com/legal/service-agreements/",
+  },
+  openGraph: {
+    locale: "en_US",
+    type: "article",
+    title: "Service Agreements - EnDetect",
+    description:
+      "This is a Service Level Agreement (SLA) between Innocode Ventures (“Innocode”) and the User. This document identifies the services required and the expected",
+    url: "https://endetect.com/legal/service-agreements/",
+    siteName: "EnDetect",
+    images: [
+      {
+        url: "https://pub-868e70c0da584e488cabbf226b5d569e.r2.dev/endetect-og.jpg",
+        width: 1200,
+        height: 628,
+        alt: "EnDetect Employee Monitoring",
+      },
+    ],
+    updatedTime: "2025-05-22T00:00:00+00:00",
+    publishedTime: "2020-04-02T11:17:06+00:00",
+    modifiedTime: "2025-05-22T00:00:00+00:00",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Service Agreements - EnDetect",
+    description:
+      "This is a Service Level Agreement (SLA) between Innocode Ventures (“Innocode”) and the User. This document identifies the services required and the expected",
+  },
+};
 
 const Page = () => {
     return (
@@ -12,7 +48,7 @@ const Page = () => {
                 <div className='text-[14px] px-4 leading-[22px]'>
                     <p className='mb-[24px]'>This is a Service Level Agreement (SLA) between Innocode Ventures (“Innocode”) and the User. This document identifies the services required and the expected level of services during the subscription period. This SLA describes Innocode&apos;s commitment to providing excellent customer satisfaction to each and every one of its customers.</p>
                     <p className='mb-[24px]'>Innocode understands the importance of your software or availability of overall service including the availability of server/website and Innocode will take every measure that it can in order to provide an excellent level of service and maximum performance and uptime comparable with the best in the industry.</p>
-                    <p className='mb-[24px]'>This SLA is incorporated by reference into any agreement you may have with Innocode. Innocode may modify or amend this SLA at any time by posting a revised version at www.enDetect.com. By using the Services, you agree to the most recent version of this SLA.</p>
+                    <p className='mb-[24px]'>This SLA is incorporated by reference into any agreement you may have with Innocode. Innocode may modify or amend this SLA at any time by posting a revised version at www.endetect.com. By using the Services, you agree to the most recent version of this SLA.</p>
                     <p className='mb-[24px]'><strong>Installation:</strong></p>
                     <p className='mb-[24px]'>The licensed software is made available to you, with proper documentation. The software is required to be installed on the computers of your workforce at the customer’s end, which includes any other third-party software, frameworks, and runtime installs that are covered as per your chosen plan. Though, remote installation services are available at additional cost.</p>
                     <p className='mb-[24px]'>If you have a question about supported software and hardware requirements or any requirements for remote installation, contact our customer support.</p>

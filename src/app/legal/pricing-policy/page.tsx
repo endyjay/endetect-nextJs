@@ -1,4 +1,40 @@
 import React from "react";
+export const metadata = {
+  title: "Pricing Policy - EnDetect",
+  description:
+    "At Innocode, we are committed to offering transparent, competitive, and value-driven pricing for businesses of all sizes. Our pricing model is designed to",
+  robots:
+    "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  alternates: {
+    canonical: "https://endetect.com/legal/pricing-policy/",
+  },
+  openGraph: {
+    locale: "en_US",
+    type: "article",
+    title: "Pricing Policy - EnDetect",
+    description:
+      "At Innocode, we are committed to offering transparent, competitive, and value-driven pricing for businesses of all sizes. Our pricing model is designed to",
+    url: "https://endetect.com/legal/pricing-policy/",
+    siteName: "EnDetect",
+    images: [
+      {
+        url: "https://pub-868e70c0da584e488cabbf226b5d569e.r2.dev/endetect-og.jpg",
+        width: 1200,
+        height: 628,
+        alt: "EnDetect Employee Monitoring",
+      },
+    ],
+    updatedTime: "2025-05-22T00:00:00+00:00",
+    publishedTime: "2025-02-16T09:00:27+00:00",
+    modifiedTime: "2025-05-22T00:00:00+00:00",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pricing Policy - EnDetect",
+    description:
+      "At Innocode, we are committed to offering transparent, competitive, and value-driven pricing for businesses of all sizes. Our pricing model is designed to",
+  },
+};
 
 const Page = () => {
   return (

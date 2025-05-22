@@ -1,4 +1,34 @@
 import React from 'react'
+export const metadata = {
+  title: "Cancellation Policy - EnDetect",
+  description:
+    "At Innocode, we strive to provide the best employee monitoring and productivity tracking solutions for businesses. However, we understand that circumstances",
+  robots:
+    "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  alternates: {
+    canonical: "https://endetect.com/legal/cancellation-policy/",
+  },
+  openGraph: {
+    locale: "en_US",
+    type: "article",
+    title: "Cancellation Policy - EnDetect",
+    description:
+      "At Innocode, we strive to provide the best employee monitoring and productivity tracking solutions for businesses. However, we understand that circumstances",
+    url: "https://endetect.com/legal/cancellation-policy/",
+    siteName: "EnDetect",
+    updatedTime: "2025-02-16T08:57:15+00:00",
+    publishedTime: "2025-02-16T08:54:02+00:00",
+    modifiedTime: "2025-02-16T08:57:15+00:00",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cancellation Policy - EnDetect",
+    description:
+      "At Innocode, we strive to provide the best employee monitoring and productivity tracking solutions for businesses. However, we understand that circumstances",
+    label1: "Time to read",
+    data1: "1 minute",
+  },
+};
 
 const Page = () => {
   return (

@@ -1,4 +1,40 @@
 import React from "react";
+export const metadata = {
+  title: "Terms of Service - EnDetect",
+  description:
+    "This Agreement is made, entered into and executed at New Delhi, India on current date.",
+  robots:
+    "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  alternates: {
+    canonical: "https://endetect.com/legal/terms-of-service/",
+  },
+  openGraph: {
+    locale: "en_US",
+    type: "article",
+    title: "Terms of Service - EnDetect",
+    description:
+      "This Agreement is made, entered into and executed at New Delhi, India on current date.",
+    url: "https://endetect.com/legal/terms-of-service/",
+    siteName: "EnDetect",
+    images: [
+      {
+        url: "https://pub-868e70c0da584e488cabbf226b5d569e.r2.dev/endetect-og.jpg",
+        width: 1200,
+        height: 628,
+        alt: "EnDetect Employee Monitoring",
+      },
+    ],
+    updatedTime: "2025-05-22T00:00:00+00:00",
+    publishedTime: "2020-04-02T11:16:07+00:00",
+    modifiedTime: "2025-05-22T00:00:00+00:00",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Terms of Service - EnDetect",
+    description:
+      "This Agreement is made, entered into and executed at New Delhi, India on current date.",
+  },
+};
 
 const Page = () => {
   return (
@@ -55,7 +91,7 @@ const Page = () => {
           </p>
           <p className="mb-[24px]">
             (d) &quot;Current Date&quot; means the date of user registration at
-            Innocode website enDetect.com;
+            Innocode website www.endetect.com;
           </p>
           <p className="mb-[24px]">
             (e) &quot;Dispute Resolution&quot; means the process followed for
@@ -63,8 +99,8 @@ const Page = () => {
           </p>
           <p className="mb-[24px]">
             (f) &quot;Innocode Ventures&quot; means the service provider under
-            these Terms and includes enDetect Software and website at
-            enDetect.com;
+            these Terms and includes EnDetect Software and website at
+            www.endetect.com;
           </p>
           <p className="mb-[24px]">
             (g) &quot;Order Information&quot; includes information we collect
@@ -74,7 +110,7 @@ const Page = () => {
           </p>
           <p className="mb-[24px]">
             (h) &quot;Package&quot; means various plans displayed upon the
-            website enDetect.com, namely EnDetect Free, EnDetect Lite and
+            website www.endetect.com, namely EnDetect Free, EnDetect Lite and
             EnDetect Pro;
           </p>
           <p className="mb-[24px]">
@@ -139,7 +175,7 @@ const Page = () => {
             <strong>2. Agreement</strong>
             <br />
             You agree that, by completing the registration process upon
-            enDetect.com and thereby accepting terms and conditions, you will be
+            www.endetect.com and thereby accepting terms and conditions, you will be
             bound by the following Agreement. Innocode Ventures may require you,
             in some cases, to accept these terms through an independent
             signature service like docusign. In either case, we intend this to
@@ -160,7 +196,7 @@ const Page = () => {
             and agree with and accept all of the terms and conditions contained
             in these Terms, which include those terms and conditions expressly
             set out below and those incorporated by reference, before you use
-            avail services or register at enDetect.com.
+            avail services or register at www.endetect.com.
           </p>
           <p className="mb-[24px]">
             c) You warrant that you have independently evaluated the
@@ -245,7 +281,7 @@ const Page = () => {
           <p className="mb-[24px]">
             d) You acknowledge that it is your responsibility to inform your
             employees and users of the Services, the exact purpose of the
-            enDetect Software, including the scope of information that may be
+            EnDetect Software, including the scope of information that may be
             collected, stored and used through the use of the Services. This
             includes the requirement of entering into an express Agreement with
             your employees or contractors (your &quot;Workforce&quot;) taking
@@ -307,7 +343,7 @@ const Page = () => {
             a) Prices for the Software Services are as set forth when you
             purchase access to the Services and shall be payable in accordance
             with the package selected. Available packages have been classified
-            into enDetect Free, enDetect Lite and enDetect Pro and displayed
+            into EnDetect Free, EnDetect Lite and EnDetect Pro and displayed
             upon the website.
           </p>
           <p className="mb-[24px]">

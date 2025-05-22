@@ -1,4 +1,40 @@
 import React from "react";
+export const metadata = {
+  title: "Disclaimer - EnDetect",
+  description:
+    "Innocode Ventures and its website enDetect.com contains various information in different forms - facts, figures, opinions, views, statements, recommendations,",
+  robots:
+    "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  alternates: {
+    canonical: "https://endetect.com/legal/disclaimer/",
+  },
+  openGraph: {
+    locale: "en_US",
+    type: "article",
+    title: "Disclaimer - EnDetect",
+    description:
+      "Innocode Ventures and its website enDetect.com contains various information in different forms - facts, figures, opinions, views, statements, recommendations,",
+    url: "https://endetect.com/legal/disclaimer/",
+    siteName: "EnDetect",
+    images: [
+      {
+        url: "https://pub-868e70c0da584e488cabbf226b5d569e.r2.dev/endetect-og.jpg",
+        width: 1200,
+        height: 628,
+        alt: "EnDetect Employee Monitoring",
+      },
+    ],
+    updatedTime: "2025-05-22T00:00:00+00:00",
+    publishedTime: "2020-04-02T11:16:07+00:00",
+    modifiedTime: "2025-05-22T00:00:00+00:00",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Disclaimer - EnDetect",
+    description:
+      "Innocode Ventures and its website EnDetect.com contains various information in different forms - facts, figures, opinions, views, statements, recommendations,",
+  },
+};
 
 const Page = () => {
   return (
@@ -10,7 +46,7 @@ const Page = () => {
         </div>
         <div className="text-[14px] px-4 leading-[22px]">
           <p className="mb-[24px]">
-            Innocode Ventures and its website enDetect.com contains various
+            Innocode Ventures and its website EnDetect.com contains various
             information in different forms – facts, figures, opinions, views,
             statements, recommendations, and references. Innocode does not
             represent or endorse the accuracy, completeness, reliability of any
