@@ -43,7 +43,7 @@ const addressesData: addressesDataProps[] = [
     iconClass: "fas fa-location-dot",
     title: "Registered Address",
     description:
-      "RWEBSOFT, Sankalp Tower, Plot No. 8, Cabin No. 50, <br/> Khatipura Jaipur, <br/> Rajasthan 302021",
+      "RWEBSOFT, Sankalp Tower, Plot No. 8, Cabin No. 50, <br/> Vaishali Nagar, Jaipur, <br/> Rajasthan 302021",
     delay: 400,
   },
 ];
