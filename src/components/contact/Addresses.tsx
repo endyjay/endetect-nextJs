@@ -43,7 +43,7 @@ const addressesData: addressesDataProps[] = [
     iconClass: "fas fa-location-dot",
     title: "Registered Address",
     description:
-      "A-25, 3rd floor, Street No. 3, Guru Nanak Pura, <br/> Laxmi Nagar, <br/> New Delhi 110092",
+      "RWEBSOFT, Sankalp Tower, Plot No. 8, Cabin No. 50, <br/> Khatipura Jaipur, <br/> Rajasthan 302021",
     delay: 400,
   },
 ];
